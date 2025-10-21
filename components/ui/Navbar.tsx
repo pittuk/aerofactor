@@ -27,22 +27,24 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       scrolled
-        ? 'bg-white shadow-md border-b border-neutral-200'
-        : 'bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm border-b border-white/20'
+        ? 'bg-white shadow-lg'
+        : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center -my-2">
+          <Link href="/" className="flex items-center -my-2 relative">
             <Image
-              src={scrolled ? "/logos/logo.png" : "/logos/logo-white.png"}
+              src="/logos/logo.png"
               alt="AEROFACTOR"
               width={280}
               height={80}
-              className={`h-20 w-auto transition-all duration-300 ${
-                scrolled ? '' : 'brightness-0 invert drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]'
+              className={`h-20 w-auto transition-all duration-500 ${
+                scrolled
+                  ? 'opacity-100 filter-none'
+                  : 'brightness-0 invert drop-shadow-[0_4px_12px_rgba(0,0,0,1)]'
               }`}
               priority
             />
@@ -54,10 +56,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-semibold text-sm transition-all ${
+                className={`font-bold text-sm transition-all duration-500 ${
                   scrolled
                     ? 'text-neutral-800 hover:text-primary-600'
-                    : 'text-white hover:text-blue-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'
+                    : 'text-white hover:text-accent-500 drop-shadow-[0_3px_6px_rgba(0,0,0,1)]'
                 }`}
               >
                 {link.label}
@@ -65,7 +67,11 @@ export default function Navbar() {
             ))}
             <Link
               href="/contacto"
-              className="bg-accent-500 hover:bg-accent-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all hover:shadow-lg"
+              className={`px-6 py-2.5 rounded-lg font-bold text-sm transition-all duration-500 ${
+                scrolled
+                  ? 'bg-accent-500 hover:bg-accent-600 text-white shadow-md'
+                  : 'bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white shadow-lg'
+              }`}
             >
               Solicitar Demo
             </Link>
@@ -74,10 +80,10 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className={`lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-600 ${
+            className={`lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-all duration-500 ${
               scrolled
                 ? 'text-neutral-800 hover:bg-neutral-100'
-                : 'text-white hover:bg-white/10'
+                : 'text-white hover:bg-white/20 drop-shadow-[0_2px_6px_rgba(0,0,0,1)]'
             }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menú principal"
@@ -110,10 +116,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className={`lg:hidden border-t ${
+        <div className={`lg:hidden transition-all duration-500 ${
           scrolled
-            ? 'border-neutral-200 bg-white'
-            : 'border-white/20 bg-black/40 backdrop-blur-md'
+            ? 'bg-white border-t border-neutral-200'
+            : 'bg-primary-900/95 backdrop-blur-md'
         }`}>
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
