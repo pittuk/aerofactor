@@ -1,0 +1,275 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "slug": "sistema-vigilancia-fronteriza",
+      "title": "Sistema de Vigilancia Fronteriza",
+      "excerpt": "Sistema de aerostato para vigilancia aérea continua en control fronterizo. Monitoreo 360° para detección temprana de cruces ilegales y tráfico ilícito.",
+      "category": "productos",
+      "featured": true,
+      "content_html": "<h2>Sistema de aerostato para vigilancia aérea en control fronterizo</h2><p>Sistema de aerostato inteligente diseñado para vigilancia aérea continua y persistente en zonas fronterizas...</p>",
+      "meta_title": "Sistema de Vigilancia Fronteriza | AeroFactor",
+      "meta_description": "Sistema de aerostato para vigilancia aérea continua. Monitoreo 360° para control fronterizo. Tecnología autónoma de largo alcance.",
+      "og_image": "/public/og/products/sistema-vigilancia-fronteriza.jpg",
+      "specifications": {
+        "altitud_operacion": "500-1500 metros",
+        "tiempo_permanencia": "Hasta 30 días continuos",
+        "radio_cobertura": "50 km de diámetro",
+        "capacidad_carga": "Hasta 200 kg de sensores",
+        "configuracion_sensores": "EO/IR, radar, comunicaciones, ESM",
+        "transmision_datos": "Tiempo real vía enlace satelital/RF",
+        "movilidad": "Sistema transportable en contenedor ISO",
+        "autonomia_energetica": "Sistema híbrido solar/generador"
+      },
+      "applications": ["control-fronteras", "defensa-isr"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "prod-002",
+      "slug": "sistema-seguridad-urbana",
+      "title": "Sistema de Seguridad Urbana",
+      "excerpt": "Sistema de aerostato para vigilancia continua en entornos urbanos. Ideal para Safe City, control de eventos masivos y respuesta a emergencias.",
+      "category": "productos",
+      "featured": true,
+      "content_html": "<h2>Sistema de aerostato para vigilancia aérea urbana</h2><p>Diseñado para operaciones de seguridad pública en ciudades...</p>",
+      "meta_title": "Sistema de Seguridad Urbana | AeroFactor",
+      "meta_description": "Sistema de aerostato para vigilancia urbana continua. Monitoreo 360° para Safe City y emergencias. Tecnología autónoma.",
+      "og_image": "/public/og/products/sistema-seguridad-urbana.jpg",
+      "specifications": {
+        "altitud_operacion": "300-800 metros",
+        "tiempo_permanencia": "Hasta 15 días continuos",
+        "radio_cobertura": "30 km de diámetro",
+        "capacidad_carga": "Hasta 150 kg de sensores",
+        "configuracion_sensores": "EO/IR de alta resolución, comunicaciones",
+        "transmision_datos": "Tiempo real vía fibra óptica/RF",
+        "movilidad": "Sistema semi-móvil",
+        "autonomia_energetica": "Conexión a red eléctrica / backup generador"
+      },
+      "applications": ["safe-city", "rescate-emergencias"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "prod-003",
+      "slug": "sistema-proteccion-infraestructura",
+      "title": "Sistema de Protección de Infraestructura Crítica",
+      "excerpt": "Sistema de aerostato para vigilancia persistente de instalaciones estratégicas. Detección de intrusiones y protección perimetral 24/7.",
+      "category": "productos",
+      "featured": true,
+      "content_html": "<h2>Sistema de aerostato para protección de infraestructura crítica</h2><p>Vigilancia superior para instalaciones estratégicas...</p>",
+      "meta_title": "Sistema de Protección de Infraestructura | AeroFactor",
+      "meta_description": "Sistema de aerostato para protección de infraestructura crítica. Vigilancia 360° persistente. Detección de amenazas.",
+      "og_image": "/public/og/products/sistema-proteccion-infraestructura.jpg",
+      "specifications": {
+        "altitud_operacion": "200-500 metros",
+        "tiempo_permanencia": "Operación continua permanente",
+        "radio_cobertura": "20 km de diámetro",
+        "capacidad_carga": "Hasta 100 kg de sensores",
+        "configuracion_sensores": "EO/IR térmica, radar perimetral, detección de intrusiones",
+        "transmision_datos": "Tiempo real vía fibra óptica",
+        "movilidad": "Sistema fijo en sitio",
+        "autonomia_energetica": "Conexión directa a red de instalación"
+      },
+      "applications": ["infraestructura-critica"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "serv-001",
+      "slug": "integracion-sistemas",
+      "title": "Integración de Sistemas",
+      "excerpt": "Adaptamos aerostatos y sensores a cada necesidad operativa. Integración completa con sistemas C4ISR y plataformas de comando existentes.",
+      "category": "servicios",
+      "icon": "integration",
+      "order": 1,
+      "content_html": "<h2>Adaptación completa a sus necesidades operativas</h2><p>Cada misión requiere una configuración específica...</p>",
+      "meta_title": "Integración de Sistemas de Vigilancia Aérea | AeroFactor",
+      "meta_description": "Adaptamos aerostatos y sensores a cada necesidad operativa. Integración completa con sistemas C4ISR y plataformas de comando existentes.",
+      "og_image": "/public/og/services/integracion-sistemas.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "serv-002",
+      "slug": "soporte-mantenimiento",
+      "title": "Soporte y Mantenimiento",
+      "excerpt": "Acompañamiento técnico permanente para garantizar operación continua. Soporte remoto y en sitio, mantenimiento preventivo y correctivo.",
+      "category": "servicios",
+      "icon": "support",
+      "order": 2,
+      "content_html": "<h2>Acompañamiento técnico permanente para operación continua</h2><p>La continuidad operacional es crítica...</p>",
+      "meta_title": "Soporte y Mantenimiento Técnico 24/7 | AeroFactor",
+      "meta_description": "Acompañamiento técnico permanente para garantizar operación continua. Soporte remoto y en sitio, mantenimiento preventivo y correctivo.",
+      "og_image": "/public/og/services/soporte-mantenimiento.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "serv-003",
+      "slug": "entrenamiento-especializado",
+      "title": "Entrenamiento Especializado",
+      "excerpt": "Capacitación técnica para operadores en terreno. Programas prácticos de entrenamiento para maximizar capacidades operacionales del sistema.",
+      "category": "servicios",
+      "icon": "training",
+      "order": 3,
+      "content_html": "<h2>Capacitación técnica para maximizar capacidades operacionales</h2><p>El desempeño óptimo del sistema depende...</p>",
+      "meta_title": "Entrenamiento y Capacitación de Operadores | AeroFactor",
+      "meta_description": "Capacitación técnica para operadores en terreno. Programas prácticos de entrenamiento para maximizar capacidades operacionales del sistema.",
+      "og_image": "/public/og/services/entrenamiento-especializado.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-001",
+      "slug": "defensa-isr",
+      "title": "Defensa e ISR",
+      "excerpt": "Inteligencia, vigilancia y reconocimiento continuo para operaciones militares. Sistemas aerostáticos para ISR persistente 24/7.",
+      "category": "aplicaciones",
+      "icon": "shield",
+      "sector": "gobierno",
+      "order": 1,
+      "content_html": "<h2>Inteligencia, vigilancia y reconocimiento táctico continuo</h2><p>Los sistemas de vigilancia aérea basados en aerostatos...</p>",
+      "meta_title": "Soluciones ISR para Defensa y Operaciones Tácticas | AeroFactor",
+      "meta_description": "Inteligencia, vigilancia y reconocimiento continuo para operaciones militares. Sistemas aerostáticos para ISR persistente 24/7.",
+      "og_image": "/public/og/applications/defensa-isr.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "app-002",
+      "slug": "control-fronteras",
+      "title": "Control de Fronteras",
+      "excerpt": "Sistemas de vigilancia aérea para control fronterizo. Detección temprana de cruces ilegales y tráfico ilícito en extensas áreas territoriales.",
+      "category": "aplicaciones",
+      "icon": "border",
+      "sector": "gobierno",
+      "order": 2,
+      "content_html": "<h2>Control territorial continuo para seguridad fronteriza</h2><p>La vigilancia de extensas líneas fronterizas...</p>",
+      "meta_title": "Vigilancia Fronteriza Persistente 24/7 | AeroFactor",
+      "meta_description": "Sistemas de vigilancia aérea para control fronterizo. Detección temprana de cruces ilegales y tráfico ilícito en extensas áreas territoriales.",
+      "og_image": "/public/og/applications/control-fronteras.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "app-003",
+      "slug": "infraestructura-critica",
+      "title": "Protección de Infraestructura Crítica",
+      "excerpt": "Protección continua de instalaciones estratégicas. Sistemas de vigilancia aérea para detección de intrusiones y amenazas a infraestructura crítica.",
+      "category": "aplicaciones",
+      "icon": "infrastructure",
+      "sector": "gobierno-privado",
+      "order": 3,
+      "content_html": "<h2>Vigilancia superior para instalaciones estratégicas</h2><p>Instalaciones críticas como plantas energéticas...</p>",
+      "meta_title": "Vigilancia de Infraestructura Crítica 24/7 | AeroFactor",
+      "meta_description": "Protección continua de instalaciones estratégicas. Sistemas de vigilancia aérea para detección de intrusiones y amenazas a infraestructura crítica.",
+      "og_image": "/public/og/applications/infraestructura-critica.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "app-004",
+      "slug": "safe-city",
+      "title": "Safe City - Seguridad Urbana",
+      "excerpt": "Vigilancia aérea para ciudades seguras. Monitoreo urbano continuo para prevención del delito y respuesta a emergencias.",
+      "category": "aplicaciones",
+      "icon": "city",
+      "sector": "gobierno-municipal",
+      "order": 4,
+      "content_html": "<h2>Monitoreo urbano inteligente para ciudades más seguras</h2><p>Las ciudades modernas requieren sistemas...</p>",
+      "meta_title": "Soluciones de Seguridad Urbana Inteligente | AeroFactor",
+      "meta_description": "Vigilancia aérea para ciudades seguras. Monitoreo urbano continuo para prevención del delito y respuesta a emergencias.",
+      "og_image": "/public/og/applications/safe-city.jpg",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    }
+  ],
+  "pages": [
+    {
+      "id": "page-home",
+      "slug": "/",
+      "title": "Vigilancia Aérea Persistente para un Mundo Más Seguro",
+      "meta_title": "Vigilancia Aérea Persistente 24/7 | AeroFactor",
+      "meta_description": "Soluciones de vigilancia aérea continua con aerostatos inteligentes. Monitoreo 360° en tiempo real para seguridad territorial.",
+      "og_image": "/public/og/home-hero.jpg",
+      "content_html": "<h1>Vigilancia aérea persistente para un mundo más seguro</h1><h2>Monitoreo continuo 24/7 con visión de 360° para proteger lo que más importa</h2>...",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "page-company",
+      "slug": "/nosotros",
+      "title": "Nosotros | AeroFactor",
+      "meta_title": "Sobre AeroFactor - Líderes en Vigilancia Aérea",
+      "meta_description": "Proveedor latinoamericano de soluciones de vigilancia aérea inteligente. Tecnología de aerostatos para seguridad territorial.",
+      "og_image": "/public/og/company/aerofactor-team.jpg",
+      "content_html": "<h1>Nosotros</h1><h2>Tecnología aérea avanzada para un mundo más seguro</h2>...",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "id": "page-contact",
+      "slug": "/contacto",
+      "title": "Contacto | AeroFactor",
+      "meta_title": "Contactar a AeroFactor - Soluciones de Vigilancia Aérea",
+      "meta_description": "Solicite información sobre sistemas de vigilancia aérea con aerostatos. Contacte a nuestro equipo comercial y técnico.",
+      "og_image": "/public/og/contact/contact-hero.jpg",
+      "content_html": "<h1>Contacto</h1><h2>Hablemos sobre sus necesidades de vigilancia aérea</h2>...",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-01-15T00:00:00Z"
+    }
+  ],
+  "company": {
+    "name": "AeroFactor",
+    "tagline": "Vigilancia aérea persistente para un mundo más seguro",
+    "mission": "Proveer soluciones aéreas avanzadas que fortalezcan la seguridad territorial mediante tecnología confiable, autónoma y persistente.",
+    "vision": "Convertirnos en el referente latinoamericano en vigilancia aérea inteligente para gobiernos y corporaciones.",
+    "values": [
+      {
+        "name": "Excelencia técnica",
+        "description": "Compromiso con la calidad y precisión en cada sistema que entregamos."
+      },
+      {
+        "name": "Confiabilidad",
+        "description": "Sistemas diseñados para operar de manera continua en condiciones críticas."
+      },
+      {
+        "name": "Innovación",
+        "description": "Adopción de tecnologías avanzadas para enfrentar desafíos de seguridad complejos."
+      },
+      {
+        "name": "Compromiso con el cliente",
+        "description": "Soporte permanente y acompañamiento durante todo el ciclo de vida del sistema."
+      }
+    ],
+    "contact": {
+      "email_comercial": "contacto@aerofactor.cl",
+      "email_soporte": "soporte@aerofactor.cl",
+      "phone": "+56 X XXXX XXXX",
+      "address": "Santiago, Chile",
+      "business_hours": "Lunes a viernes, 9:00 a 18:00 hrs (GMT-3)"
+    },
+    "target_sectors": [
+      {
+        "code": "GOV",
+        "name": "Gobierno",
+        "description": "Fuerzas armadas y agencias de defensa nacional que requieren capacidades ISR persistentes."
+      },
+      {
+        "code": "POL",
+        "name": "Policías y Municipalidades",
+        "description": "Fuerzas de seguridad pública y gobiernos locales enfocados en seguridad ciudadana y control territorial."
+      },
+      {
+        "code": "PRIV",
+        "name": "Sector Privado",
+        "description": "Empresas con infraestructura crítica que requieren protección permanente de instalaciones estratégicas."
+      }
+    ]
+  }
+}
