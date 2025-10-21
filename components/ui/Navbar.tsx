@@ -59,7 +59,7 @@ export default function Navbar() {
                 className={`font-bold text-sm transition-all duration-500 ${
                   scrolled
                     ? 'text-neutral-800 hover:text-primary-600'
-                    : 'text-white hover:text-accent-500 drop-shadow-[0_3px_6px_rgba(0,0,0,1)]'
+                    : 'text-white hover:text-accent-500'
                 }`}
               >
                 {link.label}
@@ -67,11 +67,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/contacto"
-              className={`px-6 py-2.5 rounded-lg font-bold text-sm transition-all duration-500 ${
-                scrolled
-                  ? 'bg-accent-500 hover:bg-accent-600 text-white shadow-md'
-                  : 'bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white shadow-lg'
-              }`}
+              className="bg-accent-500 hover:bg-accent-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all hover:shadow-lg"
             >
               Solicitar Demo
             </Link>
@@ -83,7 +79,7 @@ export default function Navbar() {
             className={`lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-all duration-500 ${
               scrolled
                 ? 'text-neutral-800 hover:bg-neutral-100'
-                : 'text-white hover:bg-white/20 drop-shadow-[0_2px_6px_rgba(0,0,0,1)]'
+                : 'text-white hover:bg-white/20'
             }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menú principal"
