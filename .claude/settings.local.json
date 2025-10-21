@@ -15,7 +15,8 @@
       "Bash(copy \"E:\\Proyectos Webs\\aerofactor\\logotipo\\Logo-Aerofactor.png\" \"E:\\Proyectos Webs\\aerofactor\\public\\logos\\logo.png\")",
       "Bash(copy \"E:\\Proyectos Webs\\aerofactor\\logotipo\\Logo-Aerofactor---blanco.png\" \"E:\\Proyectos Webs\\aerofactor\\public\\logos\\logo-white.png\")",
       "Bash(copy \"E:\\Proyectos Webs\\aerofactor\\logotipo\\Isotipo-Aerofactor.png\" \"E:\\Proyectos Webs\\aerofactor\\public\\favicon.png\")",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(del \"E:\\Proyectos Webs\\aerofactor\\app\\aplicaciones\\[slug]\\page.tsx\" \"E:\\Proyectos Webs\\aerofactor\\app\\nosotros\\page.tsx\" \"E:\\Proyectos Webs\\aerofactor\\app\\servicios\\[slug]\\page.tsx\")"
     ],
     "deny": [],
     "ask": []
