@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${
       scrolled
         ? 'bg-white shadow-md border-b border-neutral-200'
-        : 'bg-transparent border-b border-white/10'
+        : 'bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm border-b border-white/20'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -41,8 +41,8 @@ export default function Navbar() {
               alt="AEROFACTOR"
               width={280}
               height={80}
-              className={`h-20 w-auto transition-opacity duration-300 ${
-                scrolled ? '' : 'brightness-0 invert'
+              className={`h-20 w-auto transition-all duration-300 ${
+                scrolled ? '' : 'brightness-0 invert drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]'
               }`}
               priority
             />
@@ -54,10 +54,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-medium text-sm transition-colors ${
+                className={`font-semibold text-sm transition-all ${
                   scrolled
                     ? 'text-neutral-800 hover:text-primary-600'
-                    : 'text-white hover:text-blue-100'
+                    : 'text-white hover:text-blue-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'
                 }`}
               >
                 {link.label}
@@ -113,7 +113,7 @@ export default function Navbar() {
         <div className={`lg:hidden border-t ${
           scrolled
             ? 'border-neutral-200 bg-white'
-            : 'border-white/10 bg-primary-900/95 backdrop-blur-md'
+            : 'border-white/20 bg-black/40 backdrop-blur-md'
         }`}>
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
