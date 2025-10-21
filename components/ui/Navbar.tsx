@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
     { href: '/', label: 'Inicio' },
@@ -16,18 +17,33 @@ export default function Navbar() {
     { href: '/contacto', label: 'Contacto' },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-200/50 shadow-sm">
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
+      scrolled
+        ? 'bg-white shadow-md border-b border-neutral-200'
+        : 'bg-transparent border-b border-white/10'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center -my-2">
             <Image
-              src="/logos/logo.png"
+              src={scrolled ? "/logos/logo.png" : "/logos/logo-white.png"}
               alt="AEROFACTOR"
               width={280}
               height={80}
-              className="h-20 w-auto"
+              className={`h-20 w-auto transition-opacity duration-300 ${
+                scrolled ? '' : 'brightness-0 invert'
+              }`}
               priority
             />
           </Link>
@@ -38,7 +54,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-neutral-800 hover:text-primary-600 font-medium text-sm transition-colors"
+                className={`font-medium text-sm transition-colors ${
+                  scrolled
+                    ? 'text-neutral-800 hover:text-primary-600'
+                    : 'text-white hover:text-blue-100'
+                }`}
               >
                 {link.label}
               </Link>
@@ -54,7 +74,11 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-neutral-800 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-primary-600"
+            className={`lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-600 ${
+              scrolled
+                ? 'text-neutral-800 hover:bg-neutral-100'
+                : 'text-white hover:bg-white/10'
+            }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menú principal"
           >
@@ -86,13 +110,21 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-neutral-200 bg-white">
+        <div className={`lg:hidden border-t ${
+          scrolled
+            ? 'border-neutral-200 bg-white'
+            : 'border-white/10 bg-primary-900/95 backdrop-blur-md'
+        }`}>
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-3 rounded-lg text-neutral-800 hover:bg-neutral-100 font-medium"
+                className={`block px-4 py-3 rounded-lg font-medium ${
+                  scrolled
+                    ? 'text-neutral-800 hover:bg-neutral-100'
+                    : 'text-white hover:bg-white/10'
+                }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
