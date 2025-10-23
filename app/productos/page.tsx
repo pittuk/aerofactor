@@ -52,6 +52,8 @@ export default function ProductosPage() {
         subtitle="Plataformas aerostáticas configurables para cada misión"
         description="Sistemas de vigilancia aérea persistente diseñados modularmente para adaptarse a cada escenario operacional, desde despliegues tácticos hasta vigilancia estratégica regional."
         ctaText="Solicitar información técnica"
+        imageSrc="/images/productos.webp"
+        imageAlt="Sistema aerostático de vigilancia AEROFACTOR en operación sobre territorio chileno"
       />
 
       <section className="py-20 bg-white">

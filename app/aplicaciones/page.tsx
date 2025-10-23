@@ -49,6 +49,8 @@ export default function AplicacionesPage() {
         subtitle="Vigilancia aérea persistente para escenarios operacionales diversos"
         description="Desde misiones de defensa hasta protección de infraestructura civil y apoyo a emergencias. Cada aplicación aprovecha la capacidad única de los aerostatos para permanecer en posición durante períodos extendidos."
         ctaText="Consultar aplicación"
+        imageSrc="/images/aplicaciones.webp"
+        imageAlt="Aplicaciones del sistema aerostático AEROFACTOR: vigilancia de infraestructura crítica y defensa"
       />
 
       <section className="py-20 bg-white">

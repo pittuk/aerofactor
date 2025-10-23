@@ -21,6 +21,8 @@ export default function EmpresaPage() {
         subtitle="Tecnología aérea al servicio de la seguridad y la vigilancia inteligente"
         description="Empresa chilena especializada en soluciones de vigilancia aérea persistente con cobertura 24/7 y alcance de 360°."
         ctaText="Contáctenos"
+        imageSrc="/images/empresa.webp"
+        imageAlt="Sistema aerostático AEROFACTOR desplegado con estación terrestre de control"
       />
 
       <section className="py-20 bg-white">
