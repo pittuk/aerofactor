@@ -22,6 +22,8 @@ export default function ContactoPage() {
         description="Nuestro equipo técnico está disponible para evaluar sus requerimientos y proponer la solución más adecuada."
         ctaText="Completar formulario"
         ctaHref="#formulario"
+        imageSrc="/images/contacto.webp"
+        imageAlt="Sistema aerostático AEROFACTOR en operación"
       />
 
       <section className="py-20 bg-white" id="formulario">
