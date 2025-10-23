@@ -85,19 +85,16 @@ Desastres naturales, accidentes y operaciones de búsqueda requieren informació
 
 Nuestro enfoque para cada aplicación sigue un proceso estructurado:
 
-**1. Evaluación de Requerimientos**  
+**1. Evaluación de Requerimientos**
 Reunión con stakeholders para entender objetivos operacionales, amenazas específicas, recursos disponibles y métricas de éxito.
 
-**2. Diseño de Solución**  
+**2. Diseño de Solución**
 Selección de plataforma, configuración de sensores, plan de despliegue, arquitectura de integración y modelo de sostenimiento.
 
-**3. Prueba de Concepto**  
-Demostración operacional en condiciones reales para validar capacidades y ajustar configuración antes del despliegue definitivo.
-
-**4. Implementación**  
+**3. Implementación**
 Instalación, integración con sistemas existentes, entrenamiento de operadores y puesta en marcha operacional.
 
-**5. Soporte Continuo**  
+**4. Soporte Continuo**
 Mantenimiento programado, actualizaciones de capacidades, soporte técnico y optimización basada en lecciones aprendidas.
 
 Cada aplicación se configura específicamente para maximizar efectividad operacional y retorno de inversión, aprovechando nuestra experiencia en múltiples sectores y geografías.

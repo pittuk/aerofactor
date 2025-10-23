@@ -15,36 +15,37 @@ export default function Hero({
   title,
   subtitle,
   description,
-  ctaText = 'Solicitar Demostración',
+  ctaText = 'Solicitar Reunión',
   ctaHref = '/contacto',
-  imageSrc = '/images/hero-aerostato.webp',
+  imageSrc = '/images/hero-aerostato-nuevo.webp',
   imageAlt = 'Sistema aerostático de vigilancia AEROFACTOR',
 }: HeroProps) {
   return (
-    <section className="relative bg-primary-900 text-white overflow-hidden min-h-[600px]">
+    <section className="relative bg-white text-white overflow-visible pb-0 h-[85vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover opacity-70"
+          className="object-cover object-center opacity-85"
           priority
+          quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-900/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/75 via-primary-900/30 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 drop-shadow-2xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             {title}
           </h1>
-          <p className="text-xl sm:text-2xl text-white mb-8 font-medium drop-shadow-lg">
+          <p className="text-xl sm:text-2xl text-white mb-8 font-medium">
             {subtitle}
           </p>
           {description && (
-            <p className="text-lg text-white/95 mb-10 leading-relaxed drop-shadow-lg">
+            <p className="text-lg text-white/100 mb-10 leading-relaxed">
               {description}
             </p>
           )}

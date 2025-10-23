@@ -19,12 +19,12 @@ const kpis = [
   {
     value: '360°',
     label: 'Cobertura Total',
-    description: 'Vigilancia omnidireccional continua sobre áreas extensas',
+    description: 'Vigilancia omnidireccional continua sobre áreas extensas. Sectores de interés y/o Activos de alto valor',
   },
   {
     value: '72h',
     label: 'Operación Continua',
-    description: 'Hasta 72 horas de vuelo persistente sin reabastecimiento',
+    description: 'Hasta 72 horas de vigilancia continuas',
   },
   {
     value: '1.000 ft',
@@ -122,7 +122,7 @@ export default function Home() {
 
       {/* CTA Final */}
       <CTAWide
-        title="Solicite una Demostración Operacional"
+        title="Solicite una Reunión"
         description="Conozca cómo nuestras soluciones de vigilancia aérea persistente pueden fortalecer sus capacidades operacionales. Nuestro equipo técnico está disponible para evaluar sus requerimientos."
       />
     </>
