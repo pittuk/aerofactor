@@ -16,7 +16,13 @@
       "Bash(copy \"E:\\Proyectos Webs\\aerofactor\\logotipo\\Logo-Aerofactor---blanco.png\" \"E:\\Proyectos Webs\\aerofactor\\public\\logos\\logo-white.png\")",
       "Bash(copy \"E:\\Proyectos Webs\\aerofactor\\logotipo\\Isotipo-Aerofactor.png\" \"E:\\Proyectos Webs\\aerofactor\\public\\favicon.png\")",
       "Bash(git config:*)",
-      "Bash(del \"E:\\Proyectos Webs\\aerofactor\\app\\aplicaciones\\[slug]\\page.tsx\" \"E:\\Proyectos Webs\\aerofactor\\app\\nosotros\\page.tsx\" \"E:\\Proyectos Webs\\aerofactor\\app\\servicios\\[slug]\\page.tsx\")"
+      "Bash(del \"E:\\Proyectos Webs\\aerofactor\\app\\aplicaciones\\[slug]\\page.tsx\" \"E:\\Proyectos Webs\\aerofactor\\app\\nosotros\\page.tsx\" \"E:\\Proyectos Webs\\aerofactor\\app\\servicios\\[slug]\\page.tsx\")",
+      "Bash(copy \"c:\\Users\\gonza\\Downloads\\hero-principal-aerostato-o-globo-de-vigilancia-sob__20268_11zon.webp\" \"E:\\Proyectos Webs\\aerofactor\\public\\images\\hero-aerostato-nuevo.webp\")",
+      "Read(//h/DESCARGAS/**)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(del nul)"
     ],
     "deny": [],
     "ask": []
