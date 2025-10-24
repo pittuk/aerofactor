@@ -29,31 +29,31 @@ export default function ContactoPage() {
       />
 
       {/* Formulario destacado */}
-      <section className="py-16 bg-gradient-to-b from-neutral-50 to-white" id="formulario">
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-neutral-50 to-white" id="formulario">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary-900 mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary-900 mb-3 sm:mb-4">
               Solicite Información
             </h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto px-4">
               Complete el formulario y un especialista se pondrá en contacto para evaluar sus necesidades
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Formulario - Más grande y destacado */}
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10">
+            <div className="lg:col-span-2 order-2 lg:order-1">
+              <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10">
                 <ContactForm />
               </div>
             </div>
 
             {/* Información de contacto - Sidebar */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
               {/* Información directa */}
-              <div className="bg-primary-600 text-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Contacto Directo</h3>
-                <div className="space-y-4 text-sm">
+              <div className="bg-primary-600 text-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-lg">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Contacto Directo</h3>
+                <div className="space-y-3 sm:space-y-4 text-sm">
                   <div>
                     <p className="text-blue-100 mb-1 font-medium">Email</p>
                     <a href="mailto:contacto@aerofactor.cl" className="hover:text-accent-300 transition-colors font-semibold">

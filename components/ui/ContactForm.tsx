@@ -72,8 +72,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-neutral-200 p-8 shadow-lg">
-      <form onSubmit={handleSubmit} className="space-y-6">
+    <div className="bg-white rounded-xl sm:rounded-2xl border border-neutral-200 p-6 sm:p-8 shadow-lg">
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
         {/* Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-semibold text-neutral-800 mb-2">
@@ -190,7 +190,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="w-full bg-accent-500 hover:bg-accent-600 disabled:bg-neutral-400 disabled:cursor-not-allowed text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:shadow-lg"
+          className="w-full bg-accent-500 hover:bg-accent-600 active:bg-accent-700 disabled:bg-neutral-400 disabled:cursor-not-allowed text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all hover:shadow-lg touch-manipulation min-h-[44px]"
         >
           {status === 'loading' ? 'Enviando...' : 'Enviar Consulta'}
         </button>

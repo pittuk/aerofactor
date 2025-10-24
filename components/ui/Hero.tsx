@@ -59,20 +59,20 @@ export default function Hero({
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
         <div className="max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
             {title}
           </h1>
-          <p className="text-xl sm:text-2xl text-white mb-8 font-medium">
+          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 font-medium">
             {subtitle}
           </p>
           {description && (
-            <p className="text-lg text-white/100 mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-white/100 mb-8 sm:mb-10 leading-relaxed">
               {description}
             </p>
           )}
           <Link
             href={ctaHref}
-            className="inline-block bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:shadow-xl hover:scale-105 shadow-2xl"
+            className="inline-block bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all hover:shadow-xl hover:scale-105 shadow-2xl touch-manipulation min-h-[44px] min-w-[44px]"
           >
             {ctaText}
           </Link>

@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
 import PageTransition from '@/components/PageTransition';
+import SchemaOrg from '@/components/SchemaOrg';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <SchemaOrg />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Navbar />
         <PageTransition>
