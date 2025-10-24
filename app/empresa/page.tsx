@@ -143,7 +143,7 @@ export default function EmpresaPage() {
 
       <CTAWide
         title="¿Desea conocer más sobre AeroFactor?"
-        description="Contáctenos a través del formulario o escriba a contacto@aerofactor.cl para agendar una presentación."
+        description="Contáctenos a través del formulario o escriba a info@aerofactor.cl para agendar una presentación."
         ctaText="Contáctenos"
       />
     </>

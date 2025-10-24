@@ -88,9 +88,9 @@ export default function AplicacionesPage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-2xl mx-auto mb-4">3</div>
-              <h3 className="font-bold text-primary-900 mb-2">Prueba de Concepto</h3>
+              <h3 className="font-bold text-primary-900 mb-2">Demostración Operacional</h3>
               <p className="text-sm text-neutral-600">
-                Demostración operacional en condiciones reales para validar capacidades
+                Demo en condiciones reales para evaluar capacidades y rendimiento del sistema
               </p>
             </div>
             <div className="text-center">

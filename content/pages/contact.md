@@ -109,14 +109,14 @@ Si su consulta es urgente, puede contactarnos directamente al **+56 X XXXX XXXX*
 
 ### Título: Error al enviar el formulario
 
-Lo sentimos, ha ocurrido un error al enviar su consulta. Por favor, intente nuevamente o contáctenos directamente a **contacto@aerofactor.cl**.
+Lo sentimos, ha ocurrido un error al enviar su consulta. Por favor, intente nuevamente o contáctenos directamente a **info@aerofactor.cl**.
 
 ---
 
 ## Información de contacto directo
 
 **Email comercial:**
-contacto@aerofactor.cl
+info@aerofactor.cl
 
 **Email soporte técnico:**
 soporte@aerofactor.cl

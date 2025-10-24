@@ -51,7 +51,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>contacto@aerofactor.cl</li>
+              <li>info@aerofactor.cl</li>
               <li>+56 X XXXX XXXX</li>
               <li>Santiago, Chile</li>
             </ul>

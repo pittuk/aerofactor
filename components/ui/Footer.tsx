@@ -7,7 +7,6 @@ export default function Footer() {
   const navigationLinks = [
     { href: '/', label: 'Inicio' },
     { href: '/productos', label: 'Productos' },
-    { href: '/servicios', label: 'Servicios' },
     { href: '/aplicaciones', label: 'Aplicaciones' },
     { href: '/empresa', label: 'Empresa' },
     { href: '/contacto', label: 'Contacto' },
@@ -75,7 +74,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-3">Empresa</h3>
             <ul className="space-y-2.5">
-              {navigationLinks.slice(0, 4).map((link) => (
+              {navigationLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -98,7 +97,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:contacto@aerofactor.cl" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors">
+                <a href="mailto:info@aerofactor.cl" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors">
                   Email
                 </a>
               </li>
