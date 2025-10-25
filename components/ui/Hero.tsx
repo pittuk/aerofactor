@@ -32,11 +32,11 @@ export default function Hero({
   const alignmentClasses = {
     center: 'items-center',
     bottom: 'items-end pb-20',
-    top: 'items-start pt-32',
+    top: 'items-start pt-48',
   };
 
   return (
-    <section className={`relative bg-primary-900 text-white overflow-visible pb-0 h-[85vh] flex ${alignmentClasses[contentPosition]}`}>
+    <section className={`relative bg-primary-900 text-white overflow-visible pb-0 h-[85vh] flex ${alignmentClasses[contentPosition]} pt-16`}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-primary-900">
         <Image
