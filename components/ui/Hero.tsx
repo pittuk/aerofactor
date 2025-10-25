@@ -36,7 +36,7 @@ export default function Hero({
   };
 
   return (
-    <section className={`relative bg-primary-900 text-white overflow-visible pb-0 h-[85vh] flex ${alignmentClasses[contentPosition]} pt-16`}>
+    <section className={`relative bg-primary-900 text-white overflow-visible pb-0 h-[85vh] min-h-[600px] flex ${alignmentClasses[contentPosition]} pt-20`}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-primary-900">
         <Image
@@ -57,7 +57,7 @@ export default function Hero({
       </div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pb-24 md:pb-0">
         <div className="max-w-3xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
             {title}
