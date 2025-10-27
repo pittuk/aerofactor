@@ -22,7 +22,18 @@
       "Bash(netstat:*)",
       "Bash(findstr:*)",
       "Bash(taskkill:*)",
-      "Bash(del nul)"
+      "Bash(del nul)",
+      "Bash(tree:*)",
+      "Bash(dir /S /B *.tsx *.ts *.json)",
+      "Bash(dir:*)",
+      "Bash(git rm:*)",
+      "Bash(start http://localhost:3000)",
+      "Bash(move appaplicaciones \"app\\[locale]\\aplicaciones\")",
+      "Bash(move appcontacto \"app\\[locale]\\contacto\")",
+      "Bash(move appempresa \"app\\[locale]\\empresa\")",
+      "Bash(move appnosotros \"app\\[locale]\\nosotros\")",
+      "Bash(move appproductos \"app\\[locale]\\productos\")",
+      "Bash(move apppage.tsx \"app\\[locale]\\page.tsx\")"
     ],
     "deny": [],
     "ask": []

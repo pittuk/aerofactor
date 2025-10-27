@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -9,17 +14,17 @@ export default function Footer() {
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4">AeroFactor</h3>
             <p className="text-gray-400 text-sm">
-              Vigilancia aérea persistente para un mundo más seguro
+              {t.footer.tagline}
             </p>
           </div>
 
           {/* Productos */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Productos</h4>
+            <h4 className="text-lg font-semibold mb-4">{t.footer.products}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <Link href="/productos" className="hover:text-white">
-                  Ver todos los productos
+                  {t.footer.allProducts}
                 </Link>
               </li>
             </ul>
@@ -27,21 +32,21 @@ export default function Footer() {
 
           {/* Servicios */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Servicios</h4>
+            <h4 className="text-lg font-semibold mb-4">{t.footer.services}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <Link href="/servicios/integracion-sistemas" className="hover:text-white">
-                  Integración de Sistemas
+                  {t.footer.systemIntegration}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/soporte-mantenimiento" className="hover:text-white">
-                  Soporte y Mantenimiento
+                  {t.footer.supportMaintenance}
                 </Link>
               </li>
               <li>
                 <Link href="/servicios/entrenamiento-especializado" className="hover:text-white">
-                  Entrenamiento
+                  {t.footer.training}
                 </Link>
               </li>
             </ul>
@@ -49,17 +54,17 @@ export default function Footer() {
 
           {/* Contacto */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contacto</h4>
+            <h4 className="text-lg font-semibold mb-4">{t.footer.contact}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>info@aerofactor.cl</li>
-              <li>+56 X XXXX XXXX</li>
-              <li>Santiago, Chile</li>
+              <li>{t.footer.email}</li>
+              <li>{t.footer.phone}</li>
+              <li>{t.footer.address}</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2025 AeroFactor. Todos los derechos reservados.</p>
+          <p>&copy; 2025 AeroFactor. {t.footer.rights}</p>
         </div>
       </div>
     </footer>

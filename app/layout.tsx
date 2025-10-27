@@ -5,6 +5,7 @@ import Navbar from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
 import PageTransition from '@/components/PageTransition';
 import SchemaOrg from '@/components/SchemaOrg';
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,13 +28,15 @@ export default function RootLayout({
         <SchemaOrg />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <Navbar />
-        <PageTransition>
-          <main className="min-h-screen">
-            {children}
-          </main>
-        </PageTransition>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <PageTransition>
+            <main className="min-h-screen">
+              {children}
+            </main>
+          </PageTransition>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

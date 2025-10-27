@@ -1,29 +1,24 @@
+'use client';
+
 import Hero from '@/components/ui/Hero';
 import ContactForm from '@/components/ui/ContactForm';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Contacto | AEROFACTOR - Solicite una Demostración',
-  description: 'Contáctenos para conocer cómo nuestras soluciones de vigilancia aérea persistente pueden fortalecer sus capacidades operacionales. Evaluación técnica sin compromiso.',
-  keywords: 'contacto AEROFACTOR, solicitar demostración, cotización vigilancia aérea, consulta ISR',
-  openGraph: {
-    title: 'Contacto | AEROFACTOR',
-    description: 'Solicite una demostración de nuestras soluciones de vigilancia aérea persistente.',
-    images: ['/og/contacto.jpg'],
-  },
-};
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ContactoPage() {
+  const { t, locale } = useLanguage();
+
   return (
     <>
       <Hero
-        title="Contacto"
-        subtitle="Hablemos sobre sus necesidades de vigilancia aérea"
-        description="Nuestro equipo técnico responderá en menos de 24 horas."
-        ctaText="Ver formulario"
+        title={t.contact.title}
+        subtitle={t.contact.subtitle}
+        description={t.contact.description}
+        ctaText={t.contact.ctaText}
         ctaHref="#formulario"
         imageSrc="/images/contacto.webp"
-        imageAlt="Sistema aerostático AEROFACTOR en operación"
+        imageAlt={locale === 'es'
+          ? "Sistema aerostático AEROFACTOR en operación"
+          : "AEROFACTOR aerostatic system in operation"}
         contentPosition="bottom"
         imageOpacity={95}
       />
@@ -33,10 +28,10 @@ export default function ContactoPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-primary-900 mb-3 sm:mb-4">
-              Solicite Información
+              {t.contact.formTitle}
             </h2>
             <p className="text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto px-4">
-              Complete el formulario y un especialista se pondrá en contacto para evaluar sus necesidades
+              {t.contact.formSubtitle}
             </p>
           </div>
 
@@ -52,61 +47,55 @@ export default function ContactoPage() {
             <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
               {/* Información directa */}
               <div className="bg-primary-600 text-white rounded-xl sm:rounded-2xl p-5 sm:p-6 shadow-lg">
-                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Contacto Directo</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{t.contact.directContact.title}</h3>
                 <div className="space-y-3 sm:space-y-4 text-sm">
                   <div>
-                    <p className="text-blue-100 mb-1 font-medium">Email</p>
+                    <p className="text-blue-100 mb-1 font-medium">{t.contact.directContact.email}</p>
                     <a href="mailto:info@aerofactor.cl" className="hover:text-accent-300 transition-colors font-semibold">
                       info@aerofactor.cl
                     </a>
                   </div>
                   <div>
-                    <p className="text-blue-100 mb-1 font-medium">Teléfono</p>
+                    <p className="text-blue-100 mb-1 font-medium">{t.contact.directContact.phone}</p>
                     <a href="tel:+56998219839" className="hover:text-accent-300 transition-colors font-semibold">
                       +56 9 9821 9839
                     </a>
                   </div>
                   <div>
-                    <p className="text-blue-100 mb-1 font-medium">Horario</p>
-                    <p className="font-semibold">Lun - Vie: 9:00 - 18:00 hrs</p>
+                    <p className="text-blue-100 mb-1 font-medium">{t.contact.directContact.schedule}</p>
+                    <p className="font-semibold">{t.contact.directContact.scheduleValue}</p>
                   </div>
                 </div>
               </div>
 
               {/* Qué esperar */}
               <div className="bg-white rounded-2xl shadow-lg p-6">
-                <h3 className="text-lg font-bold text-primary-900 mb-4">¿Qué Obtendrá?</h3>
+                <h3 className="text-lg font-bold text-primary-900 mb-4">{t.contact.benefits.title}</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start text-sm">
                     <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-neutral-700">
-                      Respuesta en <strong>menos de 24h</strong>
-                    </span>
+                    <span className="text-neutral-700" dangerouslySetInnerHTML={{ __html: t.contact.benefits.response }} />
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-neutral-700" dangerouslySetInnerHTML={{ __html: t.contact.benefits.evaluation }} />
+                  </li>
+                  <li className="flex items-start text-sm">
+                    <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-neutral-700" dangerouslySetInnerHTML={{ __html: t.contact.benefits.proposal }} />
                   </li>
                   <li className="flex items-start text-sm">
                     <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <span className="text-neutral-700">
-                      Evaluación técnica <strong>sin costo</strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-neutral-700">
-                      Propuesta <strong>personalizada</strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start text-sm">
-                    <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-neutral-700">
-                      Demostración operacional
+                      {t.contact.benefits.demo}
                     </span>
                   </li>
                 </ul>
@@ -118,9 +107,7 @@ export default function ContactoPage() {
                   <svg className="w-5 h-5 text-primary-600 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                   </svg>
-                  <p className="text-xs text-neutral-600">
-                    <strong className="text-primary-900">100% confidencial.</strong> Disponemos de acuerdos de no divulgación (NDA).
-                  </p>
+                  <p className="text-xs text-neutral-600" dangerouslySetInnerHTML={{ __html: t.contact.confidentiality }} />
                 </div>
               </div>
             </div>
