@@ -36,7 +36,7 @@ export default function Hero({
   };
 
   return (
-    <section className={`relative bg-primary-900 text-white overflow-hidden pb-0 h-[85vh] min-h-[550px] max-h-[800px] flex ${alignmentClasses[contentPosition]} pt-20`}>
+    <section className={`relative bg-primary-900 text-white overflow-hidden pb-0 min-h-[500px] h-[70vh] sm:h-[75vh] md:h-[80vh] lg:h-[85vh] max-h-[750px] flex ${alignmentClasses[contentPosition]} pt-20`}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-primary-900">
         <Image
@@ -53,27 +53,27 @@ export default function Hero({
           loading="eager"
           onLoad={() => setImageLoaded(true)}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-900/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/85 via-primary-900/45 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pb-32 sm:pb-24 md:pb-0">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pb-28 sm:pb-24 md:pb-20 lg:pb-0">
         <div className="max-w-3xl">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-3 sm:mb-4 md:mb-6 break-words">
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-2 sm:mb-3 md:mb-4 lg:mb-6 break-words">
             {title}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-4 sm:mb-6 md:mb-8 font-medium leading-relaxed break-words">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white mb-3 sm:mb-4 md:mb-6 lg:mb-8 font-medium leading-snug sm:leading-relaxed break-words">
             {subtitle}
           </p>
           {description && (
-            <p className="text-sm sm:text-base md:text-lg text-white/95 mb-6 sm:mb-8 md:mb-10 leading-relaxed break-words">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/95 mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed break-words">
               {description}
             </p>
           )}
           {ctaText && (
             <Link
               href={ctaHref}
-              className="inline-block bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-sm sm:text-base md:text-lg transition-all hover:shadow-xl hover:scale-105 shadow-2xl touch-manipulation min-h-[44px] min-w-[44px]"
+              className="inline-block bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-semibold text-xs sm:text-sm md:text-base lg:text-lg transition-all hover:shadow-xl hover:scale-105 shadow-2xl touch-manipulation min-h-[40px] min-w-[100px]"
             >
               {ctaText}
             </Link>
