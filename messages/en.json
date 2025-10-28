@@ -11,7 +11,7 @@
   },
   "home": {
     "hero": {
-      "title": "Next-Generation Persistent Aerial Surveillance",
+      "title": "Next-Generation Aerial Surveillance",
       "subtitle": "Continuous territorial protection with advanced aerostatic technology",
       "description": "Aerostatic systems equipped with state-of-the-art sensors and applied artificial intelligence for government agencies, security forces, and critical infrastructure companies in Chile and Latin America."
     },
@@ -37,7 +37,7 @@
       "subtitle": "Modular aerostatic platforms configurable for each operational scenario, from tactical deployments to regional strategic surveillance.",
       "tactical": {
         "title": "Tactical System",
-        "description": "Rapid deployment in less than 60 minutes, transportable in standard vehicle.",
+        "description": "Rapid deployment in less than 30 minutes, transportable in standard vehicle.",
         "autonomy": "Autonomy: 12-24 hours",
         "altitude": "Altitude: 150-500 feet",
         "sensors": "Gyro-stabilized EO/IR sensors"
@@ -87,13 +87,13 @@
   "products": {
     "title": "Products and Technologies",
     "subtitle": "Configurable aerostatic platforms for every mission",
-    "description": "Persistent aerial surveillance systems modularly designed to adapt to each operational scenario, from tactical deployments to regional strategic surveillance.",
+    "description": "Aerial surveillance systems modularly designed to adapt to each operational scenario, from tactical deployments to regional strategic surveillance.",
     "ctaText": "Request technical information",
-    "intro": "AEROFACTOR designs, integrates and deploys persistent aerial surveillance systems based on state-of-the-art aerostatic platforms. Each solution is specifically configured according to the client's operational requirements: coverage range, type of threats, deployment environment and level of integration with existing systems.",
+    "intro": "AEROFACTOR designs, integrates and deploys aerial surveillance systems based on state-of-the-art aerostatic platforms. Each solution is specifically configured according to the client's operational requirements: coverage range, type of threats, deployment environment and level of integration with existing systems.",
     "availablePlatforms": "Available Platforms",
     "tactical": {
       "title": "Tactical System",
-      "excerpt": "Compact platform transportable in standard vehicle, deployable by a team of 3 operators in less than 60 minutes. Ideal for tactical support, special events and emergency response.",
+      "excerpt": "Compact platform transportable in standard vehicle, deployable by a team of 2 operators in less than 30 minutes. Ideal for tactical support, special events and emergency response.",
       "autonomy": "12-24 hours of continuous operation",
       "altitude": "150-500 feet AGL",
       "sensors": ["Gyro-stabilized EO/IR camera", "HD video link", "IR illuminator"]
@@ -113,7 +113,7 @@
       "sensors": ["Multi-mode radar", "Very long range EO/IR suite", "SIGINT/COMINT", "Embedded AI server"]
     },
     "selection": {
-      "title": "How We Select the Optimal Platform",
+      "title": "How we select the optimal platform",
       "description": "Our technical team evaluates your operational requirements through a structured process:",
       "step1": {
         "title": "Mission analysis",
@@ -144,7 +144,7 @@
   },
   "applications": {
     "title": "Applications",
-    "subtitle": "Persistent aerial surveillance for diverse operational scenarios",
+    "subtitle": "Aerial surveillance for diverse operational scenarios",
     "description": "From defense missions to civil infrastructure protection and emergency support. Each application leverages the unique ability of aerostats to remain in position for extended periods.",
     "ctaText": "Consult application",
     "intro": "Our aerostatic platforms are deployed in diverse operational scenarios, providing continuous coverage without the operational costs of manned aircraft or the autonomy limitations of conventional UAVs.",
@@ -268,14 +268,13 @@
       "email": "Email",
       "phone": "Phone",
       "schedule": "Schedule",
-      "scheduleValue": "Mon - Fri: 9:00 AM - 6:00 PM"
+      "scheduleValue": "Mon - Fri: 9:00 AM - 6:00 PM Chile Local Time (GMT-3)"
     },
     "benefits": {
       "title": "What You'll Get?",
       "response": "Response in <strong>less than 24h</strong>",
       "evaluation": "Technical evaluation <strong>at no cost</strong>",
-      "proposal": "<strong>Personalized</strong> proposal",
-      "demo": "Operational demonstration"
+      "proposal": "<strong>Personalized</strong> proposal"
     },
     "confidentiality": "<strong>100% confidential.</strong> We have non-disclosure agreements (NDA) available.",
     "form": {
@@ -291,7 +290,7 @@
     }
   },
   "footer": {
-    "tagline": "Persistent aerial surveillance for a safer world",
+    "tagline": "Aerial surveillance for a safer world",
     "products": "Products",
     "allProducts": "View all products",
     "services": "Services",
@@ -306,7 +305,7 @@
   },
   "meta": {
     "home": {
-      "title": "AEROFACTOR | Persistent Aerial Surveillance with Aerostats in Chile",
+      "title": "AEROFACTOR | Aerial Surveillance with Aerostats in Chile",
       "description": "Advanced persistent aerial surveillance solutions with aerostats, multi-spectrum sensors and artificial intelligence for territorial security, borders and critical infrastructure."
     }
   }

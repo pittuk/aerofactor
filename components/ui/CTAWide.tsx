@@ -10,7 +10,7 @@ interface CTAWideProps {
 export default function CTAWide({
   title,
   description,
-  ctaText = 'Solicitar Reunión',
+  ctaText,
   ctaHref = '/contacto',
 }: CTAWideProps) {
   return (

@@ -20,7 +20,7 @@ export default function Hero({
   title,
   subtitle,
   description,
-  ctaText = 'Solicitar Reunión',
+  ctaText,
   ctaHref = '/contacto',
   imageSrc = '/images/hero-aerostato-nuevo.webp',
   imageAlt = 'Sistema aerostático de vigilancia AEROFACTOR',

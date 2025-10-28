@@ -13,7 +13,7 @@ keywords: "vigilancia aérea, aerostatos, seguridad territorial, ISR, fronteras,
 
 AEROFACTOR es la solución líder en Chile y Latinoamérica para vigilancia aérea persistente mediante plataformas aerostáticas equipadas con sensores de última generación e inteligencia artificial aplicada. Proveemos capacidades ISR (Inteligencia, Vigilancia y Reconocimiento) continuas, silenciosas y de amplio espectro para organismos gubernamentales, fuerzas de seguridad y empresas de infraestructura crítica.
 
-Nuestros sistemas aerostáticos operan a altitudes de hasta 1.000 pies con autonomía extendida de 72 horas continuas, proporcionando cobertura de 360° sobre áreas extensas sin los costos operacionales ni las limitaciones de aeronaves tripuladas o UAV convencionales. Cada plataforma integra sensores electroópticos, térmicos, de comunicaciones y procesamiento inteligente en tiempo real, entregando información accionable directamente a los tomadores de decisión.
+Nuestros sistemas aerostáticos operan a altitudes de hasta 1.000 pies con autonomía extendida de hasta 72 horas, proporcionando cobertura de 360° sobre áreas extensas sin los costos operacionales ni las limitaciones de aeronaves tripuladas o UAV convencionales. Cada plataforma integra sensores electroópticos, térmicos, de comunicaciones y procesamiento inteligente en tiempo real, entregando información accionable directamente a los tomadores de decisión.
 
 Desde el control de fronteras hasta la protección de perímetros industriales, pasando por operaciones urbanas de Safe City y apoyo a misiones tácticas, AEROFACTOR configura soluciones a medida que se integran sin problemas en arquitecturas de comando y control existentes.
 
@@ -25,7 +25,7 @@ Desde el control de fronteras hasta la protección de perímetros industriales, 
 
 ## Productos y Tecnologías
 
-Nuestras plataformas aerostáticas se diseñan modularmente para adaptarse a cada escenario operacional. Desde sistemas tácticos desplegables en 60 minutos hasta plataformas estratégicas de vigilancia regional, cada configuración incorpora:
+Nuestras plataformas aerostáticas se diseñan modularmente para adaptarse a cada escenario operacional. Desde sistemas tácticos desplegables en 30 minutos hasta plataformas estratégicas de vigilancia regional, cada configuración incorpora:
 
 - Estructuras aerostáticas de alta resistencia con estabilización dinámica
 - Payloads modulares: cámaras EO/IR de largo alcance, radares, sistemas de comunicaciones, ESM

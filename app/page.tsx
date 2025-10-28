@@ -56,6 +56,7 @@ export default function Home() {
         title={t.home.hero.title}
         subtitle={t.home.hero.subtitle}
         description={t.home.hero.description}
+        ctaText={t.nav.requestMeeting}
       />
 
       <KPIs kpis={kpis} />
@@ -116,6 +117,7 @@ export default function Home() {
       <CTAWide
         title={t.home.cta.title}
         description={t.home.cta.description}
+        ctaText={t.nav.requestMeeting}
       />
     </>
   );

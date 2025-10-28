@@ -21,14 +21,14 @@ export default function Navbar() {
             <Link href="/" className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
               {t.nav.home}
             </Link>
+            <Link href="/aplicaciones" className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
+              {t.nav.applications}
+            </Link>
             <Link href="/productos" className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
               {t.nav.products}
             </Link>
             <Link href="/servicios" className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
               {t.nav.services}
-            </Link>
-            <Link href="/aplicaciones" className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
-              {t.nav.applications}
             </Link>
             <Link href="/nosotros" className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
               {t.nav.about}

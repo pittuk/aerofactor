@@ -16,10 +16,9 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: t.nav.home },
-    { href: '/productos', label: t.nav.products },
     { href: '/aplicaciones', label: t.nav.applications },
+    { href: '/productos', label: t.nav.products },
     { href: '/empresa', label: t.nav.company },
-    { href: '/contacto', label: t.nav.contact },
   ];
 
   const isActive = (href: string) => {

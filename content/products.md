@@ -29,7 +29,7 @@ Cada sistema AEROFACTOR integra cuatro componentes esenciales:
 ### Sistema Táctico
 **Despliegue rápido para operaciones de corto y mediano plazo**
 
-Plataforma compacta transportable en vehículo estándar, desplegable por un equipo de 3 operadores en menos de 60 minutos. Ideal para apoyo táctico, eventos especiales, operaciones de búsqueda y respuesta a emergencias.
+Plataforma compacta transportable en vehículo estándar, desplegable por un equipo de 2 operadores en menos de 30 minutos. Ideal para apoyo táctico, eventos especiales, operaciones de búsqueda y respuesta a emergencias.
 
 **Especificaciones clave**:
 - Autonomía: 12-24 horas de operación continua

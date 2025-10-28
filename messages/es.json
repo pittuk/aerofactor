@@ -11,7 +11,7 @@
   },
   "home": {
     "hero": {
-      "title": "Vigilancia Aérea Persistente de Nueva Generación",
+      "title": "Vigilancia Aérea de Nueva Generación",
       "subtitle": "Protección territorial continua con tecnología aerostática avanzada",
       "description": "Sistemas aerostáticos equipados con sensores de última generación e inteligencia artificial aplicada para organismos gubernamentales, fuerzas de seguridad y empresas de infraestructura crítica en Chile y Latinoamérica."
     },
@@ -19,12 +19,12 @@
       "coverage": {
         "value": "360°",
         "label": "Cobertura Total",
-        "description": "Vigilancia omnidireccional continua sobre áreas extensas. Sectores de interés y/o Activos de alto valor"
+        "description": "Vigilancia omnidireccional sobre áreas extensas. Sectores de interés y/o Activos de alto valor"
       },
       "operation": {
         "value": "72h",
-        "label": "Operación Continua",
-        "description": "Hasta 72 horas de vigilancia continuas"
+        "label": "Operación Extendida",
+        "description": "Hasta 72 horas de vigilancia"
       },
       "altitude": {
         "value": "1.000 ft",
@@ -37,7 +37,7 @@
       "subtitle": "Plataformas aerostáticas modulares configurables para cada escenario operacional, desde despliegues tácticos hasta vigilancia estratégica regional.",
       "tactical": {
         "title": "Sistema Táctico",
-        "description": "Despliegue rápido en menos de 60 minutos, transportable en vehículo estándar.",
+        "description": "Despliegue rápido en menos de 30 minutos, transportable en vehículo estándar.",
         "autonomy": "Autonomía: 12-24 horas",
         "altitude": "Altitud: 150-500 pies",
         "sensors": "Sensores EO/IR giroestabilizados"
@@ -93,7 +93,7 @@
     "availablePlatforms": "Plataformas Disponibles",
     "tactical": {
       "title": "Sistema Táctico",
-      "excerpt": "Plataforma compacta transportable en vehículo estándar, desplegable por un equipo de 3 operadores en menos de 60 minutos. Ideal para apoyo táctico, eventos especiales y respuesta a emergencias.",
+      "excerpt": "Plataforma compacta transportable en vehículo estándar, desplegable por un equipo de 2 operadores en menos de 30 minutos. Ideal para apoyo táctico, eventos especiales y respuesta a emergencias.",
       "autonomy": "12-24 horas de operación continua",
       "altitude": "150-500 pies AGL",
       "sensors": ["Cámara EO/IR giroestabilizada", "Enlace de video HD", "Iluminador IR"]
@@ -274,8 +274,7 @@
       "title": "¿Qué Obtendrá?",
       "response": "Respuesta en <strong>menos de 24h</strong>",
       "evaluation": "Evaluación técnica <strong>sin costo</strong>",
-      "proposal": "Propuesta <strong>personalizada</strong>",
-      "demo": "Demostración operacional"
+      "proposal": "Propuesta <strong>personalizada</strong>"
     },
     "confidentiality": "<strong>100% confidencial.</strong> Disponemos de acuerdos de no divulgación (NDA).",
     "form": {
@@ -306,7 +305,7 @@
   },
   "meta": {
     "home": {
-      "title": "AEROFACTOR | Vigilancia Aérea Persistente con Aerostatos en Chile",
+      "title": "AEROFACTOR | Vigilancia Aérea con Aerostatos en Chile",
       "description": "Soluciones avanzadas de vigilancia aérea persistente con aerostatos, sensores multi-espectro e inteligencia artificial para seguridad territorial, fronteras e infraestructura crítica."
     }
   }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface FormData {
   name: string;
@@ -12,6 +13,7 @@ interface FormData {
 }
 
 export default function ContactForm() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -56,11 +58,11 @@ export default function ContactForm() {
       } else {
         const data = await response.json();
         setStatus('error');
-        setErrorMessage(data.error || 'Error al enviar el mensaje. Por favor intente nuevamente.');
+        setErrorMessage(data.error || t.contact.form.error);
       }
     } catch (error) {
       setStatus('error');
-      setErrorMessage('Error de conexión. Por favor verifique su conexión e intente nuevamente.');
+      setErrorMessage(t.contact.form.error);
     }
   };
 
@@ -77,7 +79,7 @@ export default function ContactForm() {
         {/* Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-semibold text-neutral-800 mb-2">
-            Nombre completo <span className="text-accent-500">*</span>
+            {t.contact.form.name} <span className="text-accent-500">*</span>
           </label>
           <input
             type="text"
@@ -87,14 +89,13 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition"
-            placeholder="Ej: Juan Pérez González"
           />
         </div>
 
         {/* Email */}
         <div>
           <label htmlFor="email" className="block text-sm font-semibold text-neutral-800 mb-2">
-            Correo electrónico <span className="text-accent-500">*</span>
+            {t.contact.form.email} <span className="text-accent-500">*</span>
           </label>
           <input
             type="email"
@@ -104,14 +105,13 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition"
-            placeholder="correo@organización.cl"
           />
         </div>
 
         {/* Company */}
         <div>
           <label htmlFor="company" className="block text-sm font-semibold text-neutral-800 mb-2">
-            Organización <span className="text-accent-500">*</span>
+            {t.contact.form.organization} <span className="text-accent-500">*</span>
           </label>
           <input
             type="text"
@@ -121,14 +121,13 @@ export default function ContactForm() {
             value={formData.company}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition"
-            placeholder="Nombre de su institución o empresa"
           />
         </div>
 
         {/* Phone */}
         <div>
           <label htmlFor="phone" className="block text-sm font-semibold text-neutral-800 mb-2">
-            Teléfono
+            {t.contact.form.phone}
           </label>
           <input
             type="tel"
@@ -137,14 +136,13 @@ export default function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition"
-            placeholder="+56 9 XXXX XXXX"
           />
         </div>
 
         {/* Message */}
         <div>
           <label htmlFor="message" className="block text-sm font-semibold text-neutral-800 mb-2">
-            Mensaje <span className="text-accent-500">*</span>
+            {t.contact.form.message} <span className="text-accent-500">*</span>
           </label>
           <textarea
             id="message"
@@ -154,7 +152,6 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition resize-none"
-            placeholder="Describa brevemente sus necesidades de vigilancia aérea, área de cobertura requerida y cualquier requisito específico..."
           />
         </div>
 
@@ -173,7 +170,7 @@ export default function ContactForm() {
         {status === 'success' && (
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
             <p className="text-green-800 font-medium">
-              ✓ Mensaje enviado correctamente. Nos contactaremos con usted dentro de 24 horas hábiles.
+              ✓ {t.contact.form.success}
             </p>
           </div>
         )}
@@ -192,12 +189,8 @@ export default function ContactForm() {
           disabled={status === 'loading'}
           className="w-full bg-accent-500 hover:bg-accent-600 active:bg-accent-700 disabled:bg-neutral-400 disabled:cursor-not-allowed text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all hover:shadow-lg touch-manipulation min-h-[44px]"
         >
-          {status === 'loading' ? 'Enviando...' : 'Enviar Consulta'}
+          {status === 'loading' ? t.contact.form.sending : t.contact.form.submit}
         </button>
-
-        <p className="text-xs text-neutral-500 text-center">
-          Al enviar este formulario, acepta que AEROFACTOR procese sus datos para responder a su consulta.
-        </p>
       </form>
     </div>
   );
