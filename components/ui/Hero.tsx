@@ -36,7 +36,7 @@ export default function Hero({
   };
 
   return (
-    <section className={`relative bg-primary-900 text-white overflow-visible pb-0 h-[85vh] min-h-[600px] flex ${alignmentClasses[contentPosition]} pt-20`}>
+    <section className={`relative bg-primary-900 text-white overflow-hidden pb-0 h-[85vh] min-h-[550px] max-h-[800px] flex ${alignmentClasses[contentPosition]} pt-20`}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-primary-900">
         <Image
@@ -53,29 +53,31 @@ export default function Hero({
           loading="eager"
           onLoad={() => setImageLoaded(true)}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/75 via-primary-900/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-900/40 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pb-24 md:pb-0">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 pb-32 sm:pb-24 md:pb-0">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-3 sm:mb-4 md:mb-6 break-words">
             {title}
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 font-medium">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-4 sm:mb-6 md:mb-8 font-medium leading-relaxed break-words">
             {subtitle}
           </p>
           {description && (
-            <p className="text-base sm:text-lg text-white/100 mb-8 sm:mb-10 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-white/95 mb-6 sm:mb-8 md:mb-10 leading-relaxed break-words">
               {description}
             </p>
           )}
-          <Link
-            href={ctaHref}
-            className="inline-block bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all hover:shadow-xl hover:scale-105 shadow-2xl touch-manipulation min-h-[44px] min-w-[44px]"
-          >
-            {ctaText}
-          </Link>
+          {ctaText && (
+            <Link
+              href={ctaHref}
+              className="inline-block bg-accent-500 hover:bg-accent-600 active:bg-accent-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-sm sm:text-base md:text-lg transition-all hover:shadow-xl hover:scale-105 shadow-2xl touch-manipulation min-h-[44px] min-w-[44px]"
+            >
+              {ctaText}
+            </Link>
+          )}
         </div>
       </div>
     </section>
