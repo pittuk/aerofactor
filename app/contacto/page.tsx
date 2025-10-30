@@ -16,9 +16,7 @@ export default function ContactoPage() {
         ctaText={t.contact.ctaText}
         ctaHref="#formulario"
         imageSrc="/images/contacto.webp"
-        imageAlt={locale === 'es'
-          ? "Sistema aerostático AEROFACTOR en operación"
-          : "AEROFACTOR aerostatic system in operation"}
+        imageAlt={t.imageAlts.contactSystem}
         contentPosition="bottom"
         imageOpacity={95}
       />

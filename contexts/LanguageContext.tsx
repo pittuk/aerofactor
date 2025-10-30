@@ -3,8 +3,9 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import es from '@/messages/es.json';
 import en from '@/messages/en.json';
+import pt from '@/messages/pt.json';
 
-type Locale = 'es' | 'en';
+type Locale = 'es' | 'en' | 'pt';
 type Messages = typeof es;
 
 interface LanguageContextType {
@@ -23,10 +24,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     // Check if user has previously selected a language
     const savedLocale = localStorage.getItem('locale') as Locale;
 
-    if (savedLocale && (savedLocale === 'es' || savedLocale === 'en')) {
+    if (savedLocale && (savedLocale === 'es' || savedLocale === 'en' || savedLocale === 'pt')) {
       // Use saved preference
       setLocaleState(savedLocale);
-      setMessages(savedLocale === 'es' ? es : en);
+      setMessages(savedLocale === 'es' ? es : savedLocale === 'en' ? en : pt);
     } else {
       // Auto-detect language from browser
       const browserLang = navigator.language || navigator.languages?.[0] || 'es';
@@ -41,23 +42,21 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       if (detectedLocale.startsWith('en')) {
         selectedLocale = 'en';
       } else if (detectedLocale.startsWith('pt')) {
-        // For now, use Spanish as fallback since Portuguese isn't fully implemented
-        // TODO: Add Portuguese support
-        selectedLocale = 'es';
+        selectedLocale = 'pt';
       } else {
         // Spanish for es-*, and any other language defaults to Spanish
         selectedLocale = 'es';
       }
 
       setLocaleState(selectedLocale);
-      setMessages(selectedLocale === 'es' ? es : en);
+      setMessages(selectedLocale === 'es' ? es : selectedLocale === 'en' ? en : pt);
       localStorage.setItem('locale', selectedLocale);
     }
   }, []);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
-    setMessages(newLocale === 'es' ? es : en);
+    setMessages(newLocale === 'es' ? es : newLocale === 'en' ? en : pt);
     localStorage.setItem('locale', newLocale);
   };
 

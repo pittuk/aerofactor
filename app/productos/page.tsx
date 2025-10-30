@@ -46,9 +46,7 @@ export default function ProductosPage() {
         description={t.products.description}
         ctaText={t.products.ctaText}
         imageSrc="/images/productos.webp"
-        imageAlt={locale === 'es'
-          ? "Sistema aerostático de vigilancia AEROFACTOR en operación sobre territorio chileno"
-          : "AEROFACTOR aerostatic surveillance system in operation over Chilean territory"}
+        imageAlt={t.imageAlts.productsSystem}
       />
 
       <section className="py-20 bg-white">

@@ -2,7 +2,7 @@
 
 import Hero from '@/components/ui/Hero';
 import KPIs from '@/components/ui/KPIs';
-import AppGrid from '@/components/ui/AppGrid';
+import AppGridSimple from '@/components/ui/AppGridSimple';
 import CTAWide from '@/components/ui/CTAWide';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -47,6 +47,10 @@ export default function Home() {
     {
       title: t.home.applications.rescue.title,
       description: t.home.applications.rescue.description,
+    },
+    {
+      title: t.applications.items.ports.title,
+      description: t.applications.items.ports.description,
     },
   ];
 
@@ -111,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* Aplicaciones */}
-      <AppGrid applications={applications} />
+      <AppGridSimple applications={applications} />
 
       {/* CTA Final */}
       <CTAWide

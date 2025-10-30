@@ -89,6 +89,12 @@
     "subtitle": "Configurable aerostatic platforms for every mission",
     "description": "Aerial surveillance systems modularly designed to adapt to each operational scenario, from tactical deployments to regional strategic surveillance.",
     "ctaText": "Request technical information",
+    "specs": {
+      "autonomy": "Autonomy:",
+      "altitude": "Altitude:",
+      "payload": "Payload:",
+      "sensors": "Sensors:"
+    },
     "intro": "AEROFACTOR designs, integrates and deploys aerial surveillance systems based on state-of-the-art aerostatic platforms. Each solution is specifically configured according to the client's operational requirements: coverage range, type of threats, deployment environment and level of integration with existing systems.",
     "availablePlatforms": "Available Platforms",
     "tactical": {
@@ -201,6 +207,18 @@
       "title": "Have a specific use case?",
       "description": "Our technical team can evaluate your needs and propose the optimal configuration for your application.",
       "ctaText": "Consult application"
+    },
+    "videos": {
+      "title": "System in Action",
+      "subtitle": "Watch our aerostatic system in real operation",
+      "product": {
+        "title": "Aerostatic System",
+        "description": "Surveillance platform in operational deployment"
+      },
+      "camera": {
+        "title": "Zoom Capability",
+        "description": "Detection and tracking of long-range targets"
+      }
     }
   },
   "company": {
@@ -308,5 +326,13 @@
       "title": "AEROFACTOR | Aerial Surveillance with Aerostats in Chile",
       "description": "Advanced persistent aerial surveillance solutions with aerostats, multi-spectrum sensors and artificial intelligence for territorial security, borders and critical infrastructure."
     }
+  },
+  "imageAlts": {
+    "contactSystem": "AEROFACTOR aerostatic system in operation",
+    "heroAerostat": "AEROFACTOR surveillance aerostat",
+    "companyOffice": "AEROFACTOR office",
+    "productsSystem": "AEROFACTOR surveillance aerostatic system in operation over Chilean territory",
+    "applicationsSystem": "AEROFACTOR aerostatic system applications: critical infrastructure and defense surveillance",
+    "companyDeployment": "AEROFACTOR aerostatic system deployed with ground control station"
   }
 }

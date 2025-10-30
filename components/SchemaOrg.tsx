@@ -11,7 +11,7 @@ export default function SchemaOrg() {
       telephone: '+56-9-9821-9839',
       contactType: 'sales',
       areaServed: ['CL', 'LATAM'],
-      availableLanguage: ['es'],
+      availableLanguage: ['es', 'en', 'pt'],
     },
     address: {
       '@type': 'PostalAddress',

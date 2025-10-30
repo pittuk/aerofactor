@@ -89,6 +89,12 @@
     "subtitle": "Plataformas aerostáticas configurables para cada misión",
     "description": "Sistemas de vigilancia aérea persistente diseñados modularmente para adaptarse a cada escenario operacional, desde despliegues tácticos hasta vigilancia estratégica regional.",
     "ctaText": "Solicitar información técnica",
+    "specs": {
+      "autonomy": "Autonomía:",
+      "altitude": "Altitud:",
+      "payload": "Payload:",
+      "sensors": "Sensores:"
+    },
     "intro": "AEROFACTOR diseña, integra y despliega sistemas de vigilancia aérea persistente basados en plataformas aerostáticas de última generación. Cada solución se configura específicamente según los requisitos operacionales del cliente: alcance de cobertura, tipo de amenazas, entorno de despliegue y nivel de integración con sistemas existentes.",
     "availablePlatforms": "Plataformas Disponibles",
     "tactical": {
@@ -201,6 +207,18 @@
       "title": "¿Tiene un caso de uso específico?",
       "description": "Nuestro equipo técnico puede evaluar sus necesidades y proponer la configuración óptima para su aplicación.",
       "ctaText": "Consultar aplicación"
+    },
+    "videos": {
+      "title": "Sistema en Acción",
+      "subtitle": "Observe nuestro sistema aerostático en operación real",
+      "product": {
+        "title": "Sistema Aerostático",
+        "description": "Plataforma de vigilancia en despliegue operacional"
+      },
+      "camera": {
+        "title": "Capacidad de Zoom",
+        "description": "Detección y seguimiento de objetivos a larga distancia"
+      }
     }
   },
   "company": {
@@ -308,5 +326,13 @@
       "title": "AEROFACTOR | Vigilancia Aérea con Aerostatos en Chile",
       "description": "Soluciones avanzadas de vigilancia aérea persistente con aerostatos, sensores multi-espectro e inteligencia artificial para seguridad territorial, fronteras e infraestructura crítica."
     }
+  },
+  "imageAlts": {
+    "contactSystem": "Sistema aerostático AEROFACTOR en operación",
+    "heroAerostat": "Aerostato de vigilancia AEROFACTOR",
+    "companyOffice": "Oficina de AEROFACTOR",
+    "productsSystem": "Sistema aerostático de vigilancia AEROFACTOR en operación sobre territorio chileno",
+    "applicationsSystem": "Aplicaciones del sistema aerostático AEROFACTOR: vigilancia de infraestructura crítica y defensa",
+    "companyDeployment": "Sistema aerostático AEROFACTOR desplegado con estación terrestre de control"
   }
 }

@@ -15,9 +15,7 @@ export default function EmpresaPage() {
         description={t.company.description}
         ctaText={t.company.ctaText}
         imageSrc="/images/empresa.webp"
-        imageAlt={locale === 'es'
-          ? "Sistema aerostático AEROFACTOR desplegado con estación terrestre de control"
-          : "AEROFACTOR aerostatic system deployed with ground control station"}
+        imageAlt={t.imageAlts.companyDeployment}
       />
 
       <section className="py-20 bg-white">

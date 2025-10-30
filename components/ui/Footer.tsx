@@ -32,9 +32,7 @@ export default function Footer() {
               className="h-11 sm:h-13 md:h-14 w-auto mb-4 -ml-1"
             />
             <p className="text-neutral-500 text-sm leading-relaxed max-w-xs mb-5">
-              {locale === 'es'
-                ? 'Vigilancia aérea persistente de nueva generación para seguridad territorial.'
-                : 'Next-generation persistent aerial surveillance for territorial security.'}
+              {t.footer.tagline}
             </p>
             {/* Social Icons */}
             <div className="flex gap-3">
@@ -59,22 +57,22 @@ export default function Footer() {
           {/* Productos */}
           <div className="col-span-1 md:col-span-1">
             <h3 className="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-4">
-              {locale === 'es' ? 'Productos' : 'Products'}
+              {t.footer.products}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/productos" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
-                  {locale === 'es' ? 'Sistema Táctico' : 'Tactical System'}
+                  {t.products.tactical.title}
                 </Link>
               </li>
               <li>
                 <Link href="/productos" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
-                  {locale === 'es' ? 'Sistema Regional' : 'Regional System'}
+                  {t.products.regional.title}
                 </Link>
               </li>
               <li>
                 <Link href="/productos" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
-                  {locale === 'es' ? 'Sistema Estratégico' : 'Strategic System'}
+                  {t.products.strategic.title}
                 </Link>
               </li>
             </ul>
@@ -83,7 +81,7 @@ export default function Footer() {
           {/* Empresa */}
           <div className="col-span-1 md:col-span-1">
             <h3 className="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-4">
-              {locale === 'es' ? 'Empresa' : 'Company'}
+              {t.nav.company}
             </h3>
             <ul className="space-y-3">
               {navigationLinks.slice(0, 4).map((link) => (
@@ -102,12 +100,12 @@ export default function Footer() {
           {/* Soporte */}
           <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <h3 className="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-4">
-              {locale === 'es' ? 'Soporte' : 'Support'}
+              {t.footer.services}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/contacto" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
-                  {locale === 'es' ? 'Contacto' : 'Contact'}
+                  {t.nav.contact}
                 </Link>
               </li>
               <li>
@@ -136,7 +134,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-xs text-neutral-400 text-center sm:text-left order-2 sm:order-1">
-              © {currentYear} AEROFACTOR. {locale === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+              © {currentYear} AEROFACTOR. {t.footer.rights}
             </p>
 
             {/* Right section: Language & Links */}
@@ -144,10 +142,10 @@ export default function Footer() {
               {/* Links */}
               <div className="flex items-center gap-4 sm:gap-6 text-xs">
                 <Link href="/privacidad" className="text-neutral-400 hover:text-accent-500 transition-colors whitespace-nowrap">
-                  {locale === 'es' ? 'Privacidad' : 'Privacy'}
+                  {locale === 'es' ? 'Privacidad' : locale === 'en' ? 'Privacy' : 'Privacidade'}
                 </Link>
                 <Link href="/terminos" className="text-neutral-400 hover:text-accent-500 transition-colors whitespace-nowrap">
-                  {locale === 'es' ? 'Términos' : 'Terms'}
+                  {locale === 'es' ? 'Términos' : locale === 'en' ? 'Terms' : 'Termos'}
                 </Link>
               </div>
 
@@ -160,7 +158,7 @@ export default function Footer() {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
                   </svg>
-                  <span className="text-xs font-medium uppercase tracking-wider">{locale === 'es' ? 'ES' : 'EN'}</span>
+                  <span className="text-xs font-medium uppercase tracking-wider">{locale === 'es' ? 'ES' : locale === 'en' ? 'EN' : 'PT'}</span>
                   <svg className={`w-3 h-3 transition-transform duration-200 ${languageMenuOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -205,6 +203,25 @@ export default function Footer() {
                           <span className="text-xl mr-3">🇺🇸</span>
                           <span className="font-medium">English</span>
                           {locale === 'en' && (
+                            <svg className="w-4 h-4 ml-auto text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          )}
+                        </button>
+                        <button
+                          onClick={() => {
+                            setLocale('pt');
+                            setLanguageMenuOpen(false);
+                          }}
+                          className={`w-full flex items-center px-4 py-2.5 text-sm transition-colors ${
+                            locale === 'pt'
+                              ? 'bg-primary-50 text-primary-700'
+                              : 'text-neutral-700 hover:bg-neutral-50'
+                          }`}
+                        >
+                          <span className="text-xl mr-3">🇧🇷</span>
+                          <span className="font-medium">Português</span>
+                          {locale === 'pt' && (
                             <svg className="w-4 h-4 ml-auto text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                             </svg>
