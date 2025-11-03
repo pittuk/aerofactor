@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     // Prepare email content
     const mailOptions = {
       from: process.env.CONTACT_FROM || 'noreply@aerofactor.cl',
-      to: process.env.CONTACT_TO || 'contacto@aerofactor.cl',
+      to: process.env.CONTACT_TO || 'info@aerofactor.cl',
       replyTo: email,
       subject: `Consulta desde Web - ${company}`,
       text: `Nueva consulta desde el sitio web AEROFACTOR
