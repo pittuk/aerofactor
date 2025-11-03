@@ -47,6 +47,28 @@ export default function ContactForm() {
 
       if (response.ok) {
         setStatus('success');
+
+        // Google Analytics - Evento de conversión
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'conversion', {
+            event_category: 'Contact Form',
+            event_label: 'Form Submission Success',
+            value: 1
+          });
+
+          // Evento adicional para Google Ads (si lo usas)
+          (window as any).gtag('event', 'generate_lead', {
+            event_category: 'Contact Form',
+            event_label: formData.company,
+            value: 1
+          });
+        }
+
+        // Meta Pixel - Evento Lead (si lo usas)
+        if (typeof window !== 'undefined' && (window as any).fbq) {
+          (window as any).fbq('track', 'Lead');
+        }
+
         setFormData({
           name: '',
           email: '',
