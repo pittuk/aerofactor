@@ -29,22 +29,66 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       setLocaleState(savedLocale);
       setMessages(savedLocale === 'es' ? es : savedLocale === 'en' ? en : pt);
     } else {
-      // Auto-detect language from browser
+      // Auto-detect language by IP geolocation
+      detectLanguageByIP();
+    }
+  }, []);
+
+  const detectLanguageByIP = async () => {
+    try {
+      // Try to get country from IP using a free geolocation API
+      const response = await fetch('https://ipapi.co/json/');
+      const data = await response.json();
+
+      let selectedLocale: Locale = 'es'; // Default to Spanish
+
+      if (data.country_code) {
+        const country = data.country_code.toUpperCase();
+
+        // English-speaking countries
+        const englishCountries = ['US', 'GB', 'CA', 'AU', 'NZ', 'IE', 'ZA', 'IN', 'SG'];
+        // Portuguese-speaking countries
+        const portugueseCountries = ['BR', 'PT', 'AO', 'MZ'];
+        // Spanish-speaking countries (Latin America + Spain)
+        const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'PE', 'VE', 'CL', 'EC', 'GT', 'CU', 'BO', 'DO', 'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY', 'GQ'];
+
+        if (englishCountries.includes(country)) {
+          selectedLocale = 'en';
+        } else if (portugueseCountries.includes(country)) {
+          selectedLocale = 'pt';
+        } else if (spanishCountries.includes(country)) {
+          selectedLocale = 'es';
+        } else {
+          // Fallback to browser language for other countries
+          const browserLang = navigator.language || navigator.languages?.[0] || 'es';
+          const detectedLocale = browserLang.toLowerCase();
+
+          if (detectedLocale.startsWith('en')) {
+            selectedLocale = 'en';
+          } else if (detectedLocale.startsWith('pt')) {
+            selectedLocale = 'pt';
+          } else {
+            selectedLocale = 'es'; // Default to Spanish
+          }
+        }
+      }
+
+      setLocaleState(selectedLocale);
+      setMessages(selectedLocale === 'es' ? es : selectedLocale === 'en' ? en : pt);
+      localStorage.setItem('locale', selectedLocale);
+    } catch (error) {
+      // If geolocation fails, fallback to browser language
+      console.log('Geolocation failed, using browser language');
       const browserLang = navigator.language || navigator.languages?.[0] || 'es';
       const detectedLocale = browserLang.toLowerCase();
 
-      // Determine locale based on browser language
-      // English for: en-US, en-GB, en-CA, en-AU, etc.
-      // Portuguese for: pt-BR, pt-PT
-      // Spanish for: es-*, and default fallback
-      let selectedLocale: Locale = 'es'; // Default to Spanish
+      let selectedLocale: Locale = 'es';
 
       if (detectedLocale.startsWith('en')) {
         selectedLocale = 'en';
       } else if (detectedLocale.startsWith('pt')) {
         selectedLocale = 'pt';
       } else {
-        // Spanish for es-*, and any other language defaults to Spanish
         selectedLocale = 'es';
       }
 
@@ -52,7 +96,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       setMessages(selectedLocale === 'es' ? es : selectedLocale === 'en' ? en : pt);
       localStorage.setItem('locale', selectedLocale);
     }
-  }, []);
+  };
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
