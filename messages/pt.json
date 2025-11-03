@@ -304,7 +304,15 @@
       "submit": "Enviar mensagem",
       "sending": "Enviando...",
       "success": "Mensagem enviada com sucesso. Entraremos em contato em breve.",
-      "error": "Erro ao enviar a mensagem. Por favor, tente novamente."
+      "error": "Erro ao enviar a mensagem. Por favor, tente novamente.",
+      "successTitle": "Mensagem Enviada!",
+      "successMessage": "Obrigado por entrar em contato. Recebemos sua mensagem e responderemos em menos de 24 horas.",
+      "nextSteps": "O que vem a seguir?",
+      "step1": "Revisaremos sua consulta detalhadamente",
+      "step2": "Um especialista entrará em contato em breve",
+      "step3": "Você receberá uma proposta personalizada",
+      "sendAnother": "Enviar outra mensagem",
+      "backHome": "Voltar ao início"
     }
   },
   "footer": {

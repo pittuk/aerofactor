@@ -304,7 +304,15 @@
       "submit": "Send message",
       "sending": "Sending...",
       "success": "Message sent successfully. We will contact you soon.",
-      "error": "Error sending message. Please try again."
+      "error": "Error sending message. Please try again.",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you for contacting us. We have received your message and will respond within 24 hours.",
+      "nextSteps": "What's next?",
+      "step1": "We'll review your inquiry in detail",
+      "step2": "A specialist will contact you soon",
+      "step3": "You'll receive a personalized proposal",
+      "sendAnother": "Send another message",
+      "backHome": "Back to home"
     }
   },
   "footer": {
