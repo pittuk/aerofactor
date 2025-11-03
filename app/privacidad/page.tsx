@@ -8,9 +8,9 @@ export default function PrivacidadPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-primary-900 to-primary-800 text-white py-32 sm:py-40">
+      <div className="bg-gradient-to-b from-primary-900 to-primary-800 text-white py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
             {t.privacy.title}
           </h1>
           <p className="text-blue-100 text-base sm:text-lg">
@@ -20,7 +20,7 @@ export default function PrivacidadPage() {
       </div>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 -mt-8">
         {/* Company Info Card */}
         <div className="bg-white rounded-xl shadow-sm border border-neutral-200 p-8 sm:p-10 mb-12">
           <div className="text-center">

@@ -20,40 +20,40 @@ export default function Footer() {
 
   return (
     <footer className="bg-white border-t border-neutral-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 mb-8 md:mb-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 py-12 sm:py-14 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-10 mb-10 lg:mb-12">
           {/* Logo and Description */}
-          <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 md:mb-0">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <Image
               src="/logos/Logo-Aerofactor---gris.png"
               alt="AEROFACTOR"
-              width={220}
-              height={60}
-              className="h-11 sm:h-13 md:h-14 w-auto mb-4 -ml-1"
+              width={320}
+              height={90}
+              className="h-16 sm:h-18 md:h-20 lg:h-20 w-auto mb-6"
             />
-            <p className="text-neutral-500 text-sm leading-relaxed max-w-xs">
+            <p className="text-neutral-600 text-base sm:text-base leading-relaxed max-w-sm">
               {t.footer.tagline}
             </p>
           </div>
 
           {/* Productos */}
-          <div className="col-span-1 md:col-span-1">
-            <h3 className="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-4">
+          <div className="col-span-1">
+            <h3 className="text-sm font-bold text-neutral-900 uppercase tracking-wider mb-5">
               {t.footer.products}
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/productos" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
+                <Link href="/productos" className="text-base text-neutral-700 hover:text-accent-500 transition-colors inline-block">
                   {t.products.tactical.title}
                 </Link>
               </li>
               <li>
-                <Link href="/productos" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
+                <Link href="/productos" className="text-base text-neutral-700 hover:text-accent-500 transition-colors inline-block">
                   {t.products.regional.title}
                 </Link>
               </li>
               <li>
-                <Link href="/productos" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
+                <Link href="/productos" className="text-base text-neutral-700 hover:text-accent-500 transition-colors inline-block">
                   {t.products.strategic.title}
                 </Link>
               </li>
@@ -61,8 +61,8 @@ export default function Footer() {
           </div>
 
           {/* Empresa */}
-          <div className="col-span-1 md:col-span-1">
-            <h3 className="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-4">
+          <div className="col-span-1">
+            <h3 className="text-sm font-bold text-neutral-900 uppercase tracking-wider mb-5">
               {t.nav.company}
             </h3>
             <ul className="space-y-3">
@@ -70,7 +70,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block"
+                    className="text-base text-neutral-700 hover:text-accent-500 transition-colors inline-block"
                   >
                     {link.label}
                   </Link>
@@ -80,27 +80,27 @@ export default function Footer() {
           </div>
 
           {/* Soporte */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-1">
-            <h3 className="text-xs font-bold text-neutral-700 uppercase tracking-wider mb-4">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+            <h3 className="text-sm font-bold text-neutral-900 uppercase tracking-wider mb-5">
               {t.footer.services}
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/contacto" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-block">
+                <Link href="/contacto" className="text-base text-neutral-700 hover:text-accent-500 transition-colors inline-block">
                   {t.nav.contact}
                 </Link>
               </li>
               <li>
-                <a href="mailto:info@aerofactor.cl" className="text-sm text-neutral-500 hover:text-accent-500 transition-colors inline-flex items-center gap-1.5">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="mailto:info@aerofactor.cl" className="text-base text-neutral-700 hover:text-accent-500 transition-colors inline-flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   info@aerofactor.cl
                 </a>
               </li>
               <li>
-                <span className="text-sm text-neutral-500 inline-flex items-center gap-1.5">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span className="text-base text-neutral-700 inline-flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>

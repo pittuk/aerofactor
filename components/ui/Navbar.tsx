@@ -30,11 +30,15 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      // Close mobile menu on scroll
+      if (mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [mobileMenuOpen]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -232,12 +236,22 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className={`lg:hidden transition-all duration-300 ${
-          scrolled
-            ? 'bg-white border-t border-neutral-200'
-            : 'bg-black/80 backdrop-blur-md'
-        }`}>
-          <div className="px-4 pt-2 pb-6 space-y-1">
+        <>
+          {/* Overlay to close menu when clicking outside */}
+          <div
+            className="fixed inset-0 bg-black/50 lg:hidden"
+            style={{ zIndex: 45, top: '80px' }}
+            onClick={() => setMobileMenuOpen(false)}
+          />
+          <div
+            className={`fixed top-20 left-0 right-0 lg:hidden transition-all duration-300 ${
+              scrolled
+                ? 'bg-white border-t border-neutral-200 shadow-lg'
+                : 'bg-black/90 backdrop-blur-md'
+            }`}
+            style={{ zIndex: 50 }}
+          >
+            <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -367,6 +381,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
+        </>
       )}
     </nav>
   );
