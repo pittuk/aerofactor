@@ -351,7 +351,7 @@
     },
     "dataCollection": {
       "title": "Informações que Coletamos",
-      "description": "Coletamos informações que você nos fornece voluntariamente quando:",
+      "description": "Coletamos as seguintes informações que você nos fornece voluntariamente:",
       "items": {
         "name": "Nome e sobrenome",
         "email": "Endereço de e-mail",
