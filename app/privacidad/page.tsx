@@ -117,13 +117,13 @@ export default function PrivacidadPage() {
             </h2>
             <p className="text-neutral-700 text-base sm:text-lg mb-6">{t.privacy.contact.description}</p>
             <a
-              href="mailto:info@aerofactor.cl"
+              href="mailto:info@aerofactorlatam.com"
               className="inline-flex items-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-md hover:shadow-lg"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              info@aerofactor.cl
+              info@aerofactorlatam.com
             </a>
           </section>
         </div>

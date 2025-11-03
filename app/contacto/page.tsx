@@ -49,8 +49,8 @@ export default function ContactoPage() {
                 <div className="space-y-3 sm:space-y-4 text-sm">
                   <div>
                     <p className="text-blue-100 mb-1 font-medium">{t.contact.directContact.email}</p>
-                    <a href="mailto:info@aerofactor.cl" className="hover:text-accent-300 transition-colors font-semibold">
-                      info@aerofactor.cl
+                    <a href="mailto:info@aerofactorlatam.com" className="hover:text-accent-300 transition-colors font-semibold">
+                      info@aerofactorlatam.com
                     </a>
                   </div>
                   <div>
