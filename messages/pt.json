@@ -334,5 +334,120 @@
     "productsSystem": "Sistema aerostático de vigilância AEROFACTOR em operação sobre território chileno",
     "applicationsSystem": "Aplicações do sistema aerostático AEROFACTOR: vigilância de infraestrutura crítica e defesa",
     "companyDeployment": "Sistema aerostático AEROFACTOR implantado com estação terrestre de controle"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: Novembro 2025",
+    "company": {
+      "title": "Informações da Empresa",
+      "businessName": "Razão Social",
+      "activity": "Atividade",
+      "address": "Endereço",
+      "rut": "RUT"
+    },
+    "intro": {
+      "title": "Introdução",
+      "description": "Na AEROFACTOR valorizamos e respeitamos sua privacidade. Esta política explica como coletamos, usamos e protegemos as informações pessoais que você nos fornece através do nosso site e serviços."
+    },
+    "dataCollection": {
+      "title": "Informações que Coletamos",
+      "description": "Coletamos informações que você nos fornece voluntariamente quando:",
+      "items": {
+        "name": "Nome e sobrenome",
+        "email": "Endereço de e-mail",
+        "phone": "Número de telefone",
+        "company": "Organização ou empresa",
+        "message": "Mensagens e consultas que você nos envia"
+      }
+    },
+    "dataUse": {
+      "title": "Uso das Informações",
+      "description": "Utilizamos suas informações pessoais para:",
+      "items": {
+        "respond": "Responder às suas consultas e solicitações",
+        "provide": "Fornecer informações sobre nossos produtos e serviços",
+        "improve": "Melhorar nossos serviços e experiência do usuário",
+        "communicate": "Comunicar-nos com você sobre atualizações relevantes"
+      }
+    },
+    "dataSecurity": {
+      "title": "Segurança dos Dados",
+      "description": "Implementamos medidas de segurança técnicas e organizacionais apropriadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Todos os dados são armazenados de forma segura e apenas pessoal autorizado tem acesso a eles."
+    },
+    "dataSharing": {
+      "title": "Compartilhamento de Informações",
+      "description": "Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto quando necessário para fornecer nossos serviços ou quando exigido por lei. Podemos compartilhar informações com provedores de serviços que nos ajudam a operar nosso negócio, sempre sob estritos acordos de confidencialidade."
+    },
+    "rights": {
+      "title": "Seus Direitos",
+      "description": "Você tem o direito de:",
+      "items": {
+        "access": "Acessar as informações pessoais que temos sobre você",
+        "correct": "Solicitar a correção de informações inexatas",
+        "delete": "Solicitar a exclusão de suas informações pessoais",
+        "object": "Objetar ao processamento de suas informações"
+      }
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Se você tiver dúvidas sobre esta política de privacidade ou desejar exercer seus direitos, pode nos contatar em:"
+    }
+  },
+  "terms": {
+    "title": "Termos e Condições",
+    "lastUpdated": "Última atualização: Novembro 2025",
+    "company": {
+      "title": "Informações da Empresa",
+      "businessName": "Razão Social",
+      "activity": "Atividade",
+      "address": "Endereço",
+      "rut": "RUT"
+    },
+    "acceptance": {
+      "title": "Aceitação dos Termos",
+      "description": "Ao acessar e usar este site, você concorda em estar vinculado a estes termos e condições de uso. Se você não concordar com qualquer parte destes termos, não deve usar nosso site."
+    },
+    "services": {
+      "title": "Descrição dos Serviços",
+      "description": "A AEROFACTOR fornece soluções de vigilância aérea persistente, incluindo:",
+      "items": {
+        "tactical": "Sistemas aerostáticos táticos, regionais e estratégicos",
+        "regional": "Soluções de vigilância para defesa, fronteiras e infraestrutura crítica",
+        "strategic": "Plataformas equipadas com sensores avançados e inteligência artificial",
+        "integration": "Integração de sistemas de vigilância",
+        "support": "Suporte técnico e manutenção",
+        "training": "Treinamento especializado para operadores"
+      }
+    },
+    "useConditions": {
+      "title": "Condições de Uso",
+      "description": "Ao usar nosso site, você concorda em:",
+      "items": {
+        "lawful": "Usar o site apenas para fins legítimos e legais",
+        "accurate": "Fornecer informações precisas e atualizadas",
+        "noHarm": "Não realizar ações que possam danificar ou interromper o funcionamento do site",
+        "respect": "Respeitar os direitos de propriedade intelectual"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Propriedade Intelectual",
+      "description": "Todo o conteúdo deste site, incluindo textos, gráficos, logotipos, imagens, vídeos e software, é propriedade da RPASYSTEMGLOBAL SPA ou de seus licenciadores e está protegido pelas leis de propriedade intelectual do Chile e tratados internacionais. A reprodução, distribuição ou uso comercial sem autorização expressa não é permitida."
+    },
+    "liability": {
+      "title": "Limitação de Responsabilidade",
+      "description": "A AEROFACTOR se esforça para manter as informações do site precisas e atualizadas, mas não garante a exatidão, integridade ou atualidade das informações. Não seremos responsáveis por danos diretos, indiretos, incidentais ou consequentes resultantes do uso ou da impossibilidade de usar nosso site."
+    },
+    "modifications": {
+      "title": "Modificações",
+      "description": "Reservamo-nos o direito de modificar estes termos e condições a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no site. É sua responsabilidade revisar periodicamente estes termos."
+    },
+    "jurisdiction": {
+      "title": "Jurisdição e Lei Aplicável",
+      "description": "Estes termos e condições são regidos pelas leis da República do Chile. Qualquer disputa relacionada a estes termos estará sujeita à jurisdição exclusiva dos tribunais chilenos."
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Para perguntas sobre estes termos e condições, você pode nos contatar em:"
+    }
   }
 }

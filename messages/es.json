@@ -334,5 +334,120 @@
     "productsSystem": "Sistema aerostático de vigilancia AEROFACTOR en operación sobre territorio chileno",
     "applicationsSystem": "Aplicaciones del sistema aerostático AEROFACTOR: vigilancia de infraestructura crítica y defensa",
     "companyDeployment": "Sistema aerostático AEROFACTOR desplegado con estación terrestre de control"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Noviembre 2025",
+    "company": {
+      "title": "Información de la Empresa",
+      "businessName": "Razón Social",
+      "activity": "Giro",
+      "address": "Dirección",
+      "rut": "RUT"
+    },
+    "intro": {
+      "title": "Introducción",
+      "description": "En AEROFACTOR valoramos y respetamos su privacidad. Esta política explica cómo recopilamos, usamos y protegemos la información personal que nos proporciona a través de nuestro sitio web y servicios."
+    },
+    "dataCollection": {
+      "title": "Información que Recopilamos",
+      "description": "Recopilamos información que usted nos proporciona voluntariamente cuando:",
+      "items": {
+        "name": "Nombre y apellidos",
+        "email": "Correo electrónico",
+        "phone": "Número de teléfono",
+        "company": "Organización o empresa",
+        "message": "Mensajes y consultas que nos envía"
+      }
+    },
+    "dataUse": {
+      "title": "Uso de la Información",
+      "description": "Utilizamos su información personal para:",
+      "items": {
+        "respond": "Responder a sus consultas y solicitudes",
+        "provide": "Proporcionar información sobre nuestros productos y servicios",
+        "improve": "Mejorar nuestros servicios y experiencia del usuario",
+        "communicate": "Comunicarnos con usted sobre actualizaciones relevantes"
+      }
+    },
+    "dataSecurity": {
+      "title": "Seguridad de los Datos",
+      "description": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción. Todos los datos se almacenan de forma segura y solo el personal autorizado tiene acceso a ellos."
+    },
+    "dataSharing": {
+      "title": "Compartir Información",
+      "description": "No vendemos, alquilamos ni compartimos su información personal con terceros, excepto cuando sea necesario para proporcionar nuestros servicios o cuando la ley lo requiera. Podemos compartir información con proveedores de servicios que nos ayudan a operar nuestro negocio, siempre bajo estrictos acuerdos de confidencialidad."
+    },
+    "rights": {
+      "title": "Sus Derechos",
+      "description": "Usted tiene derecho a:",
+      "items": {
+        "access": "Acceder a la información personal que tenemos sobre usted",
+        "correct": "Solicitar la corrección de información inexacta",
+        "delete": "Solicitar la eliminación de su información personal",
+        "object": "Oponerse al procesamiento de su información"
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Si tiene preguntas sobre esta política de privacidad o desea ejercer sus derechos, puede contactarnos en:"
+    }
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización: Noviembre 2025",
+    "company": {
+      "title": "Información de la Empresa",
+      "businessName": "Razón Social",
+      "activity": "Giro",
+      "address": "Dirección",
+      "rut": "RUT"
+    },
+    "acceptance": {
+      "title": "Aceptación de los Términos",
+      "description": "Al acceder y utilizar este sitio web, usted acepta estar sujeto a estos términos y condiciones de uso. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web."
+    },
+    "services": {
+      "title": "Descripción de Servicios",
+      "description": "AEROFACTOR proporciona soluciones de vigilancia aérea persistente, incluyendo:",
+      "items": {
+        "tactical": "Sistemas aerostáticos tácticos, regionales y estratégicos",
+        "regional": "Soluciones de vigilancia para defensa, fronteras e infraestructura crítica",
+        "strategic": "Plataformas equipadas con sensores avanzados e inteligencia artificial",
+        "integration": "Integración de sistemas de vigilancia",
+        "support": "Soporte técnico y mantenimiento",
+        "training": "Entrenamiento especializado para operadores"
+      }
+    },
+    "useConditions": {
+      "title": "Condiciones de Uso",
+      "description": "Al utilizar nuestro sitio web, usted se compromete a:",
+      "items": {
+        "lawful": "Usar el sitio solo para fines legítimos y legales",
+        "accurate": "Proporcionar información precisa y actualizada",
+        "noHarm": "No realizar acciones que puedan dañar o interrumpir el funcionamiento del sitio",
+        "respect": "Respetar los derechos de propiedad intelectual"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Propiedad Intelectual",
+      "description": "Todo el contenido de este sitio web, incluyendo textos, gráficos, logos, imágenes, videos y software, es propiedad de RPASYSTEMGLOBAL SPA o sus licenciantes y está protegido por las leyes de propiedad intelectual de Chile y tratados internacionales. No está permitida la reproducción, distribución o uso comercial sin autorización expresa."
+    },
+    "liability": {
+      "title": "Limitación de Responsabilidad",
+      "description": "AEROFACTOR se esfuerza por mantener la información del sitio web precisa y actualizada, pero no garantiza la exactitud, integridad o actualidad de la información. No seremos responsables de daños directos, indirectos, incidentales o consecuentes que resulten del uso o la imposibilidad de usar nuestro sitio web."
+    },
+    "modifications": {
+      "title": "Modificaciones",
+      "description": "Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web. Es su responsabilidad revisar periódicamente estos términos."
+    },
+    "jurisdiction": {
+      "title": "Jurisdicción y Ley Aplicable",
+      "description": "Estos términos y condiciones se rigen por las leyes de la República de Chile. Cualquier disputa relacionada con estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de Chile."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Para preguntas sobre estos términos y condiciones, puede contactarnos en:"
+    }
   }
 }
