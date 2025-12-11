@@ -1,0 +1,48 @@
+# Robots.txt optimizado para AEROFACTOR
+# https://aerofactor.cl
+
+# Permitir todos los bots principales
+User-agent: *
+Allow: /
+
+# Páginas principales
+Allow: /productos
+Allow: /aplicaciones
+Allow: /empresa
+Allow: /contacto
+Allow: /privacidad
+Allow: /terminos
+
+# Recursos estáticos
+Allow: /images/
+Allow: /logos/
+Allow: /og/
+Allow: /_next/static/
+
+# Bloquear archivos innecesarios para bots
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+
+# Google bots específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /logos/
+Allow: /og/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://aerofactor.cl/sitemap.xml
+
+# Crawl-delay para bots menos prioritarios (opcional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://aerofactor.cl/</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aerofactor.cl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aerofactor.cl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aerofactor.cl/" />
+  </url>
+
+  <!-- Productos -->
+  <url>
+    <loc>https://aerofactor.cl/productos</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aerofactor.cl/productos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aerofactor.cl/productos" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aerofactor.cl/productos" />
+  </url>
+
+  <!-- Aplicaciones -->
+  <url>
+    <loc>https://aerofactor.cl/aplicaciones</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aerofactor.cl/aplicaciones" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aerofactor.cl/aplicaciones" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aerofactor.cl/aplicaciones" />
+  </url>
+
+  <!-- Empresa -->
+  <url>
+    <loc>https://aerofactor.cl/empresa</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aerofactor.cl/empresa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aerofactor.cl/empresa" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aerofactor.cl/empresa" />
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://aerofactor.cl/contacto</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aerofactor.cl/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aerofactor.cl/contacto" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aerofactor.cl/contacto" />
+  </url>
+
+  <!-- Privacidad -->
+  <url>
+    <loc>https://aerofactor.cl/privacidad</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Términos -->
+  <url>
+    <loc>https://aerofactor.cl/terminos</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

@@ -45,7 +45,15 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
     apple: '/favicon.png',
   },
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+// Viewport configuration
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: '#021442',
 };
 
 export default function RootLayout({
@@ -56,8 +64,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Performance: Preconnect a dominios externos */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://ipapi.co" />
+
         <SchemaOrg />
         <GoogleAnalytics />
+
         {/* Meta tags para idiomas alternativos */}
         <meta property="og:locale" content="es_CL" />
         <meta property="og:locale:alternate" content="en_US" />

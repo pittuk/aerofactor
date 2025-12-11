@@ -2,6 +2,50 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { checkRateLimit } from '@/lib/rateLimit';
 
+// Mensajes de error multiidioma
+const errorMessages = {
+  es: {
+    tooMany: 'Demasiadas solicitudes. Por favor intente nuevamente en 10 minutos.',
+    nameLength: 'El nombre debe tener al menos 2 caracteres',
+    invalidEmail: 'Por favor ingrese un correo electrónico válido',
+    companyLength: 'El nombre de la organización debe tener al menos 2 caracteres',
+    messageLength: 'El mensaje debe tener al menos 10 caracteres',
+    invalidPhone: 'Por favor ingrese un número de teléfono válido',
+    success: 'Mensaje enviado correctamente',
+    genericError: 'Error al enviar el mensaje. Por favor intente nuevamente.',
+  },
+  en: {
+    tooMany: 'Too many requests. Please try again in 10 minutes.',
+    nameLength: 'Name must be at least 2 characters',
+    invalidEmail: 'Please enter a valid email address',
+    companyLength: 'Organization name must be at least 2 characters',
+    messageLength: 'Message must be at least 10 characters',
+    invalidPhone: 'Please enter a valid phone number',
+    success: 'Message sent successfully',
+    genericError: 'Error sending message. Please try again.',
+  },
+  pt: {
+    tooMany: 'Muitas solicitações. Por favor, tente novamente em 10 minutos.',
+    nameLength: 'O nome deve ter pelo menos 2 caracteres',
+    invalidEmail: 'Por favor, insira um endereço de e-mail válido',
+    companyLength: 'O nome da organização deve ter pelo menos 2 caracteres',
+    messageLength: 'A mensagem deve ter pelo menos 10 caracteres',
+    invalidPhone: 'Por favor, insira um número de telefone válido',
+    success: 'Mensagem enviada com sucesso',
+    genericError: 'Erro ao enviar mensagem. Por favor, tente novamente.',
+  }
+};
+
+// Detectar idioma del header Accept-Language
+function getLanguage(request: NextRequest): 'es' | 'en' | 'pt' {
+  const acceptLanguage = request.headers.get('accept-language') || 'es';
+  const lang = acceptLanguage.toLowerCase();
+
+  if (lang.includes('en')) return 'en';
+  if (lang.includes('pt')) return 'pt';
+  return 'es';
+}
+
 // Función de sanitización HTML para prevenir XSS
 function escapeHtml(text: string): string {
   const map: Record<string, string> = {
@@ -33,14 +77,15 @@ function isValidPhone(phone: string): boolean {
 
 export async function POST(request: NextRequest) {
   try {
+    const lang = getLanguage(request);
+    const msgs = errorMessages[lang];
+
     // Rate limiting por IP
     const ip = request.ip ?? request.headers.get('x-forwarded-for') ?? 'unknown';
 
     if (!checkRateLimit(ip, 3, 600000)) { // 3 requests por 10 minutos
       return NextResponse.json(
-        {
-          error: 'Demasiadas solicitudes. Por favor intente nuevamente en 10 minutos.',
-        },
+        { error: msgs.tooMany },
         { status: 429 }
       );
     }
@@ -63,35 +108,35 @@ export async function POST(request: NextRequest) {
     // Validaciones
     if (!name || name.length < 2) {
       return NextResponse.json(
-        { error: 'El nombre debe tener al menos 2 caracteres' },
+        { error: msgs.nameLength },
         { status: 400 }
       );
     }
 
     if (!email || !isValidEmail(email)) {
       return NextResponse.json(
-        { error: 'Por favor ingrese un correo electrónico válido' },
+        { error: msgs.invalidEmail },
         { status: 400 }
       );
     }
 
     if (!company || company.length < 2) {
       return NextResponse.json(
-        { error: 'El nombre de la organización debe tener al menos 2 caracteres' },
+        { error: msgs.companyLength },
         { status: 400 }
       );
     }
 
     if (!message || message.length < 10) {
       return NextResponse.json(
-        { error: 'El mensaje debe tener al menos 10 caracteres' },
+        { error: msgs.messageLength },
         { status: 400 }
       );
     }
 
     if (phone && !isValidPhone(phone)) {
       return NextResponse.json(
-        { error: 'Por favor ingrese un número de teléfono válido' },
+        { error: msgs.invalidPhone },
         { status: 400 }
       );
     }
@@ -175,7 +220,7 @@ ${message}
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
-      { message: 'Mensaje enviado correctamente' },
+      { message: msgs.success },
       { status: 200 }
     );
   } catch (error) {
@@ -185,8 +230,11 @@ ${message}
       errorMessage: error instanceof Error ? error.message : 'Unknown error',
     });
 
+    const lang = getLanguage(request);
+    const msgs = errorMessages[lang];
+
     return NextResponse.json(
-      { error: 'Error al enviar el mensaje. Por favor intente nuevamente.' },
+      { error: msgs.genericError },
       { status: 500 }
     );
   }
