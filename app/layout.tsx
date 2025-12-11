@@ -62,7 +62,7 @@ export default function RootLayout({
         <LanguageProvider>
           <Navbar />
           <PageTransition>
-            <main className="min-h-screen">
+            <main id="main-content" role="main" className="min-h-screen">
               {children}
             </main>
           </PageTransition>

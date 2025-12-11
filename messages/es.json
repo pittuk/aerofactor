@@ -457,5 +457,12 @@
       "title": "Contacto",
       "description": "Para preguntas sobre estos términos y condiciones, puede contactarnos en:"
     }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que buscas no existe o ha sido movida.",
+    "ctaHome": "Volver al inicio",
+    "ctaContact": "Contactar",
+    "helpText": "También puedes visitar:"
   }
 }

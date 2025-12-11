@@ -457,5 +457,12 @@
       "title": "Contact",
       "description": "For questions about these terms and conditions, you can contact us at:"
     }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "We're sorry, the page you're looking for doesn't exist or has been moved.",
+    "ctaHome": "Go to home",
+    "ctaContact": "Contact us",
+    "helpText": "You can also visit:"
   }
 }

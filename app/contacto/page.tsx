@@ -3,12 +3,23 @@
 import Hero from '@/components/ui/Hero';
 import ContactForm from '@/components/ui/ContactForm';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Head from 'next/head';
 
 export default function ContactoPage() {
   const { t, locale } = useLanguage();
 
   return (
     <>
+      <Head>
+        <title>Contacto | Solicitar Demostración AEROFACTOR</title>
+        <meta name="description" content="Contacte con AEROFACTOR para una demostración personalizada de nuestros sistemas aerostáticos. Email: info@aerofactorlatam.com. Respuesta en 24 horas." />
+        <meta name="keywords" content="contacto AEROFACTOR, demostración aerostatos, cotización vigilancia aérea, solicitar información ISR" />
+        <meta property="og:title" content="Contacto | Solicitar Demostración AEROFACTOR" />
+        <meta property="og:description" content="Contáctenos para una demostración personalizada. Respuesta en 24 horas." />
+        <meta property="og:url" content="https://aerofactor.cl/contacto" />
+        <meta property="og:image" content="https://aerofactor.cl/og/contacto.jpg" />
+        <link rel="canonical" href="https://aerofactor.cl/contacto" />
+      </Head>
       <Hero
         title={t.contact.title}
         subtitle={t.contact.subtitle}

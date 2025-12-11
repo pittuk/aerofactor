@@ -4,6 +4,7 @@ import Hero from '@/components/ui/Hero';
 import ProductCard from '@/components/ui/ProductCard';
 import CTAWide from '@/components/ui/CTAWide';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Head from 'next/head';
 
 export default function ProductosPage() {
   const { t, locale } = useLanguage();
@@ -40,6 +41,20 @@ export default function ProductosPage() {
 
   return (
     <>
+      <Head>
+        <title>Sistemas Aerostáticos de Vigilancia | AEROFACTOR</title>
+        <meta name="description" content="Plataformas aerostáticas tácticas, regionales y estratégicas equipadas con sensores multi-espectro e IA. Cobertura de 50-500km² con operación continua 24/7." />
+        <meta name="keywords" content="aerostatos tácticos, vigilancia aérea, sistemas ISR, sensores multi-espectro, aerostatos militares, vigilancia persistente" />
+        <meta property="og:title" content="Sistemas Aerostáticos de Vigilancia | AEROFACTOR" />
+        <meta property="og:description" content="Plataformas aerostáticas tácticas, regionales y estratégicas para vigilancia persistente" />
+        <meta property="og:url" content="https://aerofactor.cl/productos" />
+        <meta property="og:image" content="https://aerofactor.cl/og/productos.jpg" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sistemas Aerostáticos de Vigilancia | AEROFACTOR" />
+        <meta name="twitter:description" content="Plataformas aerostáticas para vigilancia persistente con tecnología avanzada" />
+        <link rel="canonical" href="https://aerofactor.cl/productos" />
+      </Head>
       <Hero
         title={t.products.title}
         subtitle={t.products.subtitle}

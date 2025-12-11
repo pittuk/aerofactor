@@ -115,7 +115,7 @@ export default function Footer() {
         <div className="border-t border-neutral-200 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             {/* Copyright */}
-            <p className="text-xs text-neutral-400 text-center sm:text-left order-2 sm:order-1">
+            <p className="text-xs text-neutral-600 text-center sm:text-left order-2 sm:order-1">
               © {currentYear} AEROFACTOR. {t.footer.rights}
             </p>
 
@@ -123,10 +123,10 @@ export default function Footer() {
             <div className="flex flex-col-reverse sm:flex-row items-center gap-4 sm:gap-6 order-1 sm:order-2">
               {/* Links */}
               <div className="flex items-center gap-4 sm:gap-6 text-xs">
-                <Link href="/privacidad" className="text-neutral-400 hover:text-accent-500 transition-colors whitespace-nowrap">
+                <Link href="/privacidad" className="text-neutral-600 hover:text-accent-500 transition-colors whitespace-nowrap py-2 px-1 inline-block min-h-[44px] flex items-center">
                   {locale === 'es' ? 'Privacidad' : locale === 'en' ? 'Privacy' : 'Privacidade'}
                 </Link>
-                <Link href="/terminos" className="text-neutral-400 hover:text-accent-500 transition-colors whitespace-nowrap">
+                <Link href="/terminos" className="text-neutral-600 hover:text-accent-500 transition-colors whitespace-nowrap py-2 px-1 inline-block min-h-[44px] flex items-center">
                   {locale === 'es' ? 'Términos' : locale === 'en' ? 'Terms' : 'Termos'}
                 </Link>
               </div>

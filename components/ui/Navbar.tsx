@@ -40,6 +40,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [mobileMenuOpen]);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target as Node)) {
@@ -57,11 +69,24 @@ export default function Navbar() {
   }, [languageMenuOpen]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled
-        ? 'bg-white shadow-md'
-        : 'bg-gradient-to-b from-black/40 to-transparent backdrop-blur-sm'
-    }`}>
+    <>
+      {/* Skip to main content - Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent-500 text-white px-4 py-2 rounded-lg z-[200] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500"
+      >
+        Saltar al contenido principal
+      </a>
+
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? 'bg-white shadow-md'
+            : 'bg-gradient-to-b from-black/40 to-transparent backdrop-blur-sm'
+        }`}
+        role="navigation"
+        aria-label="Navegación principal"
+      >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -200,13 +225,15 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className={`lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-all duration-300 ${
+            className={`lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all duration-300 ${
               scrolled
                 ? 'text-neutral-700 hover:bg-neutral-100'
                 : 'text-white hover:bg-white/20 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]'
             }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Menú principal"
+            aria-label={mobileMenuOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             <svg
               className="h-6 w-6"
@@ -235,37 +262,35 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <>
-          {/* Overlay to close menu when clicking outside */}
-          <div
-            className="fixed inset-0 bg-black/50 lg:hidden"
-            style={{ zIndex: 45, top: '80px' }}
-            onClick={() => setMobileMenuOpen(false)}
-          />
-          <div
-            className={`fixed top-20 left-0 right-0 lg:hidden transition-all duration-300 ${
-              scrolled
-                ? 'bg-white border-t border-neutral-200 shadow-lg'
-                : 'bg-black/90 backdrop-blur-md'
-            }`}
-            style={{ zIndex: 50 }}
-          >
-            <div className="px-4 pt-2 pb-6 space-y-1">
+      <div
+        id="mobile-menu"
+        className={`lg:hidden fixed top-20 left-0 right-0 transition-all duration-300 ease-in-out ${
+          mobileMenuOpen
+            ? 'max-h-screen opacity-100 visible'
+            : 'max-h-0 opacity-0 invisible overflow-hidden'
+        } ${
+          scrolled
+            ? 'bg-white border-t border-neutral-200 shadow-lg'
+            : 'bg-black/90 backdrop-blur-md border-t border-white/10'
+        }`}
+        style={{ zIndex: 50 }}
+      >
+            <div className="px-4 pt-4 pb-6 space-y-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block px-4 py-3 rounded-lg font-medium uppercase tracking-wide transition-colors ${
+                className={`block px-4 py-3 rounded-lg font-medium uppercase tracking-wide text-sm transition-colors ${
                   scrolled
                     ? isActive(link.href)
                       ? 'text-accent-500 bg-accent-50'
                       : 'text-neutral-700 hover:text-accent-500 hover:bg-neutral-100'
                     : isActive(link.href)
-                      ? 'text-white bg-white/10'
+                      ? 'text-white bg-white/20'
                       : 'text-white hover:text-accent-400 hover:bg-white/10'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
+                aria-current={isActive(link.href) ? 'page' : undefined}
               >
                 {link.label}
               </Link>
@@ -374,15 +399,14 @@ export default function Navbar() {
 
             <Link
               href="/contacto"
-              className="block mt-4 text-center bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold uppercase tracking-wide"
+              className="block mt-4 text-center bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold uppercase tracking-wide min-h-[48px] flex items-center justify-center touch-manipulation"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.requestMeeting}
             </Link>
           </div>
         </div>
-        </>
-      )}
-    </nav>
+      </nav>
+    </>
   );
 }
