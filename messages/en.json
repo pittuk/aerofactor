@@ -1,0 +1,461 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "services": "Services",
+    "applications": "Applications",
+    "company": "Company",
+    "about": "About Us",
+    "contact": "Contact",
+    "requestMeeting": "Request Meeting"
+  },
+  "home": {
+    "hero": {
+      "title": "Next-Generation Aerial Surveillance",
+      "subtitle": "Continuous territorial protection with advanced aerostatic technology",
+      "description": "Aerostatic systems equipped with state-of-the-art sensors and applied artificial intelligence for government agencies, security forces, and critical infrastructure companies in Chile and Latin America."
+    },
+    "kpis": {
+      "coverage": {
+        "value": "360°",
+        "label": "Total Coverage",
+        "description": "Continuous omnidirectional surveillance over extensive areas. Areas of interest and/or high-value assets"
+      },
+      "operation": {
+        "value": "72h",
+        "label": "Continuous Operation",
+        "description": "Up to 72 hours of continuous surveillance"
+      },
+      "altitude": {
+        "value": "1,000 ft",
+        "label": "Operational Altitude",
+        "description": "Flexible deployment between 300 and 1,000 feet according to mission"
+      }
+    },
+    "products": {
+      "title": "Products and Technologies",
+      "subtitle": "Modular aerostatic platforms configurable for each operational scenario, from tactical deployments to regional strategic surveillance.",
+      "tactical": {
+        "title": "Tactical System",
+        "description": "Rapid deployment in less than 30 minutes, transportable in standard vehicle.",
+        "autonomy": "Autonomy: 8 hours",
+        "altitude": "Altitude: up to 1000 feet",
+        "sensors": "Gyro-stabilized EO/IR sensors"
+      },
+      "regional": {
+        "title": "Regional System",
+        "description": "Extended coverage for border surveillance and critical infrastructure.",
+        "autonomy": "Autonomy: 48-72 hours",
+        "altitude": "Altitude: up to 1000 feet",
+        "sensors": "EO/IR Suite + Radar + AIS/ADS-B"
+      },
+      "strategic": {
+        "title": "Strategic System",
+        "description": "Multi-mission surveillance with complete C4ISR integration.",
+        "autonomy": "Autonomy: 72 hours",
+        "altitude": "Altitude: up to 1500 feet",
+        "sensors": "Multi-mode Radar + SIGINT + AI"
+      }
+    },
+    "applications": {
+      "defense": {
+        "title": "Defense & ISR",
+        "description": "Tactical surveillance, area reconnaissance, and damage assessment for military operations."
+      },
+      "borders": {
+        "title": "Border Control",
+        "description": "Early detection of irregular crossings and monitoring of illicit traffic in extensive areas."
+      },
+      "infrastructure": {
+        "title": "Critical Infrastructure",
+        "description": "Perimeter protection of ports, power plants, mines, and pipelines."
+      },
+      "safecity": {
+        "title": "Safe City",
+        "description": "Urban surveillance, mass event monitoring, and rapid response coordination."
+      },
+      "rescue": {
+        "title": "Rescue & Emergencies",
+        "description": "Search and rescue, disaster assessment, and wildfire support."
+      }
+    },
+    "cta": {
+      "title": "Request a Meeting",
+      "description": "Learn how our persistent aerial surveillance solutions can strengthen your operational capabilities. Our technical team is available to evaluate your requirements."
+    }
+  },
+  "products": {
+    "title": "Products and Technologies",
+    "subtitle": "Configurable aerostatic platforms for every mission",
+    "description": "Aerial surveillance systems modularly designed to adapt to each operational scenario, from tactical deployments to regional strategic surveillance.",
+    "ctaText": "Request technical information",
+    "specs": {
+      "autonomy": "Autonomy:",
+      "altitude": "Altitude:",
+      "payload": "Payload:",
+      "sensors": "Sensors:"
+    },
+    "intro": "AEROFACTOR designs, integrates and deploys aerial surveillance systems based on state-of-the-art aerostatic platforms. Each solution is specifically configured according to the client's operational requirements: coverage range, type of threats, deployment environment and level of integration with existing systems.",
+    "availablePlatforms": "Available Platforms",
+    "tactical": {
+      "title": "Tactical System",
+      "excerpt": "Compact platform transportable in standard vehicle, deployable by a team of 2 operators in less than 30 minutes. Ideal for tactical support, special events and emergency response.",
+      "autonomy": "8 hours of continuous operation",
+      "altitude": "up to 1000 feet",
+      "sensors": ["Gyro-stabilized EO/IR camera", "HD video link", "IR illuminator"]
+    },
+    "regional": {
+      "title": "Regional System",
+      "excerpt": "Intermediate autonomy platform with capacity for multiple simultaneous sensors. Standard configuration for border control, infrastructure protection and persistent urban surveillance.",
+      "autonomy": "48-72 hours of continuous operation",
+      "altitude": "up to 1000 feet",
+      "sensors": ["Long-range EO/IR suite", "Ground surveillance radar", "AIS/ADS-B"]
+    },
+    "strategic": {
+      "title": "Strategic System",
+      "excerpt": "Higher capacity platform for prolonged strategic operations, with payload up to 250 kg. Native integration with C4ISR centers and multi-user distribution.",
+      "autonomy": "72 hours of continuous operation",
+      "altitude": "up to 1500 feet",
+      "sensors": ["Multi-mode radar", "Very long range EO/IR suite", "SIGINT/COMINT", "Embedded AI server"]
+    },
+    "selection": {
+      "title": "How we select the optimal platform",
+      "description": "Our technical team evaluates your operational requirements through a structured process:",
+      "step1": {
+        "title": "Mission analysis",
+        "description": "Objectives, threats, coverage area and operation duration"
+      },
+      "step2": {
+        "title": "Environment assessment",
+        "description": "Weather conditions, airspace restrictions and infrastructure"
+      },
+      "step3": {
+        "title": "Integration",
+        "description": "Compatibility with C2 systems, networks and existing data formats"
+      },
+      "step4": {
+        "title": "Training and sustainment",
+        "description": "Operator profile, training times and spare parts logistics"
+      }
+    },
+    "cta": {
+      "title": "Need a custom configuration?",
+      "description": "Contact our technical team for a detailed evaluation of your operational requirements.",
+      "ctaText": "Request technical information"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Specialized support services"
+  },
+  "applications": {
+    "title": "Applications",
+    "subtitle": "Aerial surveillance for diverse operational scenarios",
+    "description": "From defense missions to civil infrastructure protection and emergency support. Each application leverages the unique ability of aerostats to remain in position for extended periods.",
+    "ctaText": "Consult application",
+    "intro": "Our aerostatic platforms are deployed in diverse operational scenarios, providing continuous coverage without the operational costs of manned aircraft or the autonomy limitations of conventional UAVs.",
+    "items": {
+      "defense": {
+        "title": "Defense & ISR",
+        "description": "Operations area surveillance, real-time tactical support, denied area reconnaissance and damage assessment."
+      },
+      "borders": {
+        "title": "Border Control",
+        "description": "Automatic detection of irregular crossings, illicit traffic monitoring and coordination with ground patrols."
+      },
+      "infrastructure": {
+        "title": "Critical Infrastructure",
+        "description": "Perimeter protection of ports, airports, power plants, mines and pipelines with automatic alerts."
+      },
+      "safecity": {
+        "title": "Safe City",
+        "description": "Urban surveillance, mass event monitoring, vehicle tracking and rapid response coordination."
+      },
+      "rescue": {
+        "title": "Rescue & Emergencies",
+        "description": "Search and rescue in extensive areas, disaster assessment and wildfire support."
+      },
+      "ports": {
+        "title": "Ports & Maritime",
+        "description": "Port surveillance, unauthorized approach detection and maritime traffic monitoring."
+      }
+    },
+    "howWeWork": {
+      "title": "How We Work",
+      "step1": {
+        "title": "Requirements Assessment",
+        "description": "Meeting with stakeholders to understand objectives and success metrics"
+      },
+      "step2": {
+        "title": "Solution Design",
+        "description": "Platform selection, sensors and integration with existing systems"
+      },
+      "step3": {
+        "title": "Operational Demonstration",
+        "description": "Demo in real conditions to evaluate system capabilities and performance"
+      },
+      "step4": {
+        "title": "Implementation",
+        "description": "Installation, integration and operator training"
+      },
+      "step5": {
+        "title": "Continuous Support",
+        "description": "Maintenance, updates and continuous optimization"
+      }
+    },
+    "cta": {
+      "title": "Have a specific use case?",
+      "description": "Our technical team can evaluate your needs and propose the optimal configuration for your application.",
+      "ctaText": "Consult application"
+    },
+    "videos": {
+      "title": "System in Action",
+      "subtitle": "Watch our aerostatic system in real operation",
+      "product": {
+        "title": "Aerostatic System",
+        "description": "Surveillance platform in operational deployment"
+      },
+      "camera": {
+        "title": "Zoom Capability",
+        "description": "Detection and tracking of long-range targets"
+      }
+    }
+  },
+  "company": {
+    "title": "About AeroFactor",
+    "subtitle": "Aerial technology serving security and intelligent surveillance",
+    "description": "Chilean company specialized in persistent aerial surveillance solutions with 24/7 coverage and 360° range.",
+    "ctaText": "Contact Us",
+    "intro1": "AeroFactor is a Chilean company specialized in the development and implementation of persistent aerial surveillance solutions, based on aerostat systems and advanced sensors. Our technology enables continuous 24/7 observation with 360° coverage, aimed at strengthening territorial security, critical infrastructure protection and tactical support for civil and government operations.",
+    "intro2": "With a multidisciplinary team of engineers, technicians and analysts, we work under the highest quality and confidentiality standards, ensuring that each solution adapts to the operational and strategic conditions of our clients.",
+    "mission": {
+      "title": "Mission",
+      "description": "Provide advanced aerial solutions that strengthen territorial and operational security through the use of reliable, autonomous and persistent technology, designed to respond to current surveillance and control challenges."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To be the Latin American reference in intelligent aerial surveillance technology, standing out for innovation, reliability and effective integration with security agencies and strategic companies."
+    },
+    "values": {
+      "title": "Corporate Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly seek new ways to optimize aerial surveillance."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Every operation is executed with precision, transparency and responsibility."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "We accompany our clients throughout the operational cycle."
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "description": "We design solutions that balance cost, performance and autonomy."
+      },
+      "security": {
+        "title": "Security",
+        "description": "We protect information, infrastructure and critical environments."
+      }
+    },
+    "team": {
+      "title": "Team and Capabilities",
+      "description1": "Our team is composed of professionals with experience in aeronautics, electronics, telecommunications and defense, capable of integrating optical, infrared and radar sensors in high-demand environments.",
+      "description2": "Additionally, we collaborate with experts in data analysis, artificial intelligence and logistic maintenance, ensuring continuous and sustainable operations."
+    },
+    "cta": {
+      "title": "Want to learn more about AeroFactor?",
+      "description": "Contact us through the form or write to info@aerofactorlatam.com to schedule a presentation.",
+      "ctaText": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our company"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk about your aerial surveillance needs",
+    "description": "Our technical team will respond in less than 24 hours.",
+    "ctaText": "View form",
+    "formTitle": "Request Information",
+    "formSubtitle": "Fill out the form and a specialist will contact you to evaluate your needs",
+    "directContact": {
+      "title": "Direct Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "schedule": "Schedule",
+      "scheduleValue": "Mon - Fri: 9:00 AM - 6:00 PM Chile Local Time (GMT-3)"
+    },
+    "benefits": {
+      "title": "What You'll Get?",
+      "response": "Response in <strong>less than 24h</strong>",
+      "evaluation": "Technical evaluation <strong>at no cost</strong>",
+      "proposal": "<strong>Personalized</strong> proposal"
+    },
+    "confidentiality": "<strong>100% confidential.</strong> We have non-disclosure agreements (NDA) available.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "organization": "Organization",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully. We will contact you soon.",
+      "error": "Error sending message. Please try again.",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you for contacting us. We have received your message and will respond within 24 hours.",
+      "nextSteps": "What's next?",
+      "step1": "We'll review your inquiry in detail",
+      "step2": "A specialist will contact you soon",
+      "step3": "You'll receive a personalized proposal",
+      "sendAnother": "Send another message",
+      "backHome": "Back to home"
+    }
+  },
+  "footer": {
+    "tagline": "Aerial surveillance for a safer world",
+    "products": "Products",
+    "allProducts": "View all products",
+    "services": "Services",
+    "systemIntegration": "System Integration",
+    "supportMaintenance": "Support & Maintenance",
+    "training": "Training",
+    "contact": "Contact",
+    "email": "info@aerofactorlatam.com",
+    "phone": "+56 X XXXX XXXX",
+    "address": "Santiago, Chile",
+    "rights": "All rights reserved."
+  },
+  "meta": {
+    "home": {
+      "title": "AEROFACTOR | Aerial Surveillance with Aerostats in Chile",
+      "description": "Advanced persistent aerial surveillance solutions with aerostats, multi-spectrum sensors and artificial intelligence for territorial security, borders and critical infrastructure."
+    }
+  },
+  "imageAlts": {
+    "contactSystem": "AEROFACTOR aerostatic system in operation",
+    "heroAerostat": "AEROFACTOR surveillance aerostat",
+    "companyOffice": "AEROFACTOR office",
+    "productsSystem": "AEROFACTOR surveillance aerostatic system in operation over Chilean territory",
+    "applicationsSystem": "AEROFACTOR aerostatic system applications: critical infrastructure and defense surveillance",
+    "companyDeployment": "AEROFACTOR aerostatic system deployed with ground control station"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: November 2025",
+    "company": {
+      "title": "Company Information",
+      "businessName": "Business Name",
+      "activity": "Business Activity",
+      "address": "Address",
+      "rut": "Tax ID"
+    },
+    "intro": {
+      "title": "Introduction",
+      "description": "At AEROFACTOR we value and respect your privacy. This policy explains how we collect, use and protect the personal information you provide to us through our website and services."
+    },
+    "dataCollection": {
+      "title": "Information We Collect",
+      "description": "We collect the following information that you voluntarily provide to us:",
+      "items": {
+        "name": "First and last name",
+        "email": "Email address",
+        "phone": "Phone number",
+        "company": "Organization or company",
+        "message": "Messages and inquiries you send us"
+      }
+    },
+    "dataUse": {
+      "title": "Use of Information",
+      "description": "We use your personal information to:",
+      "items": {
+        "respond": "Respond to your inquiries and requests",
+        "provide": "Provide information about our products and services",
+        "improve": "Improve our services and user experience",
+        "communicate": "Communicate with you about relevant updates"
+      }
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "description": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure or destruction. All data is stored securely and only authorized personnel have access to it."
+    },
+    "dataSharing": {
+      "title": "Information Sharing",
+      "description": "We do not sell, rent or share your personal information with third parties, except when necessary to provide our services or when required by law. We may share information with service providers who help us operate our business, always under strict confidentiality agreements."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "description": "You have the right to:",
+      "items": {
+        "access": "Access the personal information we have about you",
+        "correct": "Request correction of inaccurate information",
+        "delete": "Request deletion of your personal information",
+        "object": "Object to the processing of your information"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "If you have questions about this privacy policy or wish to exercise your rights, you can contact us at:"
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated: November 2025",
+    "company": {
+      "title": "Company Information",
+      "businessName": "Business Name",
+      "activity": "Business Activity",
+      "address": "Address",
+      "rut": "Tax ID"
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "description": "By accessing and using this website, you agree to be bound by these terms and conditions of use. If you do not agree with any part of these terms, you should not use our website."
+    },
+    "services": {
+      "title": "Description of Services",
+      "description": "AEROFACTOR provides persistent aerial surveillance solutions, including:",
+      "items": {
+        "tactical": "Tactical, regional and strategic aerostatic systems",
+        "regional": "Surveillance solutions for defense, borders and critical infrastructure",
+        "strategic": "Platforms equipped with advanced sensors and artificial intelligence",
+        "integration": "Surveillance system integration",
+        "support": "Technical support and maintenance",
+        "training": "Specialized operator training"
+      }
+    },
+    "useConditions": {
+      "title": "Conditions of Use",
+      "description": "By using our website, you agree to:",
+      "items": {
+        "lawful": "Use the site only for legitimate and legal purposes",
+        "accurate": "Provide accurate and up-to-date information",
+        "noHarm": "Not perform actions that could damage or interrupt the site's operation",
+        "respect": "Respect intellectual property rights"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "description": "All content on this website, including text, graphics, logos, images, videos and software, is the property of RPASYSTEMGLOBAL SPA or its licensors and is protected by Chilean intellectual property laws and international treaties. Reproduction, distribution or commercial use without express authorization is not permitted."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "description": "AEROFACTOR strives to keep website information accurate and up-to-date, but does not guarantee the accuracy, completeness or timeliness of information. We will not be liable for direct, indirect, incidental or consequential damages resulting from the use or inability to use our website."
+    },
+    "modifications": {
+      "title": "Modifications",
+      "description": "We reserve the right to modify these terms and conditions at any time. Changes will take effect immediately after publication on the website. It is your responsibility to periodically review these terms."
+    },
+    "jurisdiction": {
+      "title": "Jurisdiction and Applicable Law",
+      "description": "These terms and conditions are governed by the laws of the Republic of Chile. Any dispute related to these terms will be subject to the exclusive jurisdiction of Chilean courts."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "For questions about these terms and conditions, you can contact us at:"
+    }
+  }
+}

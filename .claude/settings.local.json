@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(robocopy:*)",
+      "Bash(powershell -Command \"Copy-Item -Path ''.next'' -Destination ''E:\\Proyectos Webs\\aerofactor-hostinger\\.next'' -Recurse -Force\")",
+      "Bash(powershell -Command \"Copy-Item -Path ''public'' -Destination ''E:\\Proyectos Webs\\aerofactor-hostinger\\public'' -Recurse -Force\")",
+      "Bash(powershell -Command:*)",
+      "WebSearch",
+      "Bash(nul)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(if [ -f .gitignore ])",
+      "Bash(then echo \"Exists\")",
+      "Bash(cat:*)",
+      "Bash(else echo \"No .gitignore found\")",
+      "Bash(fi)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

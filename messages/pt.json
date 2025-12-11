@@ -1,0 +1,461 @@
+{
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "services": "Serviços",
+    "applications": "Aplicações",
+    "company": "Empresa",
+    "about": "Sobre Nós",
+    "contact": "Contato",
+    "requestMeeting": "Solicitar Reunião"
+  },
+  "home": {
+    "hero": {
+      "title": "Vigilância Aérea de Nova Geração",
+      "subtitle": "Proteção territorial contínua com tecnologia aerostática avançada",
+      "description": "Sistemas aerostáticos equipados com sensores de última geração e inteligência artificial aplicada para organismos governamentais, forças de segurança e empresas de infraestrutura crítica no Chile e América Latina."
+    },
+    "kpis": {
+      "coverage": {
+        "value": "360°",
+        "label": "Cobertura Completa",
+        "description": "Vigilância omnidirecional sobre áreas extensas. Setores de interesse e/ou Ativos de alto valor"
+      },
+      "operation": {
+        "value": "72h",
+        "label": "Operação Estendida",
+        "description": "Até 72 horas de vigilância"
+      },
+      "altitude": {
+        "value": "1.000 ft",
+        "label": "Altitude Operacional",
+        "description": "Implantação flexível entre 300 e 1.000 pés segundo a missão"
+      }
+    },
+    "products": {
+      "title": "Produtos e Tecnologias",
+      "subtitle": "Plataformas aerostáticas modulares configuráveis para cada cenário operacional, desde implantações táticas até vigilância estratégica regional.",
+      "tactical": {
+        "title": "Sistema Tático",
+        "description": "Implantação rápida em menos de 30 minutos, transportável em veículo padrão.",
+        "autonomy": "Autonomia: 8 horas",
+        "altitude": "Altitude: até 1000 pés",
+        "sensors": "Sensores EO/IR giroestabilizados"
+      },
+      "regional": {
+        "title": "Sistema Regional",
+        "description": "Cobertura estendida para vigilância de fronteiras e infraestrutura crítica.",
+        "autonomy": "Autonomia: 48-72 horas",
+        "altitude": "Altitude: até 1000 pés",
+        "sensors": "Suite EO/IR + Radar + AIS/ADS-B"
+      },
+      "strategic": {
+        "title": "Sistema Estratégico",
+        "description": "Vigilância multi-missão com integração C4ISR completa.",
+        "autonomy": "Autonomia: 72 horas",
+        "altitude": "Altitude: até 1500 pés",
+        "sensors": "Radar multi-modo + SIGINT + IA"
+      }
+    },
+    "applications": {
+      "defense": {
+        "title": "Defesa e ISR",
+        "description": "Vigilância tática, reconhecimento de áreas e avaliação de danos para operações militares."
+      },
+      "borders": {
+        "title": "Controle de Fronteiras",
+        "description": "Detecção precoce de cruzamentos irregulares e monitoramento de tráfico ilícito em zonas extensas."
+      },
+      "infrastructure": {
+        "title": "Infraestrutura Crítica",
+        "description": "Proteção perimetral de portos, usinas elétricas, minas e oleodutos."
+      },
+      "safecity": {
+        "title": "Safe City",
+        "description": "Vigilância urbana, monitoramento de eventos em massa e coordenação de resposta rápida."
+      },
+      "rescue": {
+        "title": "Resgate e Emergências",
+        "description": "Busca e resgate, avaliação de desastres e apoio a incêndios florestais."
+      }
+    },
+    "cta": {
+      "title": "Solicite uma Reunião",
+      "description": "Conheça como nossas soluções de vigilância aérea persistente podem fortalecer suas capacidades operacionais. Nossa equipe técnica está disponível para avaliar seus requisitos."
+    }
+  },
+  "products": {
+    "title": "Produtos e Tecnologias",
+    "subtitle": "Plataformas aerostáticas configuráveis para cada missão",
+    "description": "Sistemas de vigilância aérea persistente projetados modularmente para se adaptar a cada cenário operacional, desde implantações táticas até vigilância estratégica regional.",
+    "ctaText": "Solicitar informação técnica",
+    "specs": {
+      "autonomy": "Autonomia:",
+      "altitude": "Altitude:",
+      "payload": "Payload:",
+      "sensors": "Sensores:"
+    },
+    "intro": "AEROFACTOR projeta, integra e implanta sistemas de vigilância aérea persistente baseados em plataformas aerostáticas de última geração. Cada solução é configurada especificamente segundo os requisitos operacionais do cliente: alcance de cobertura, tipo de ameaças, ambiente de implantação e nível de integração com sistemas existentes.",
+    "availablePlatforms": "Plataformas Disponíveis",
+    "tactical": {
+      "title": "Sistema Tático",
+      "excerpt": "Plataforma compacta transportável em veículo padrão, implantável por uma equipe de 2 operadores em menos de 30 minutos. Ideal para apoio tático, eventos especiais e resposta a emergências.",
+      "autonomy": "8 horas de operação contínua",
+      "altitude": "até 1000 pés",
+      "sensors": ["Câmera EO/IR giroestabilizada", "Enlace de vídeo HD", "Iluminador IR"]
+    },
+    "regional": {
+      "title": "Sistema Regional",
+      "excerpt": "Plataforma de autonomia intermediária com capacidade para múltiplos sensores simultâneos. Configuração padrão para controle de fronteiras, proteção de infraestrutura e vigilância urbana persistente.",
+      "autonomy": "48-72 horas de operação contínua",
+      "altitude": "até 1000 pés",
+      "sensors": ["Suite EO/IR de longo alcance", "Radar de vigilância terrestre", "AIS/ADS-B"]
+    },
+    "strategic": {
+      "title": "Sistema Estratégico",
+      "excerpt": "Plataforma de maior capacidade para operações estratégicas prolongadas, com payload de até 250 kg. Integração nativa com centros C4ISR e distribuição multi-usuário.",
+      "autonomy": "72 horas de operação contínua",
+      "altitude": "até 1500 pés",
+      "sensors": ["Radar multi-modo", "Suite EO/IR muito longo alcance", "SIGINT/COMINT", "Servidor IA embarcado"]
+    },
+    "selection": {
+      "title": "Como Selecionamos a Plataforma Ótima",
+      "description": "Nossa equipe técnica avalia seus requisitos operacionais mediante um processo estruturado:",
+      "step1": {
+        "title": "Análise de missão",
+        "description": "Objetivos, ameaças, área de cobertura e duração de operação"
+      },
+      "step2": {
+        "title": "Avaliação de ambiente",
+        "description": "Condições climáticas, restrições aéreas e infraestrutura"
+      },
+      "step3": {
+        "title": "Integração",
+        "description": "Compatibilidade com sistemas C2, redes e formatos de dados existentes"
+      },
+      "step4": {
+        "title": "Capacitação e sustentação",
+        "description": "Perfil de operadores, tempos de treinamento e logística de peças de reposição"
+      }
+    },
+    "cta": {
+      "title": "Precisa de uma configuração personalizada?",
+      "description": "Entre em contato com nossa equipe técnica para uma avaliação detalhada de seus requisitos operacionais.",
+      "ctaText": "Solicitar informação técnica"
+    }
+  },
+  "services": {
+    "title": "Serviços",
+    "subtitle": "Serviços especializados de suporte"
+  },
+  "applications": {
+    "title": "Aplicações",
+    "subtitle": "Vigilância aérea persistente para cenários operacionais diversos",
+    "description": "Desde missões de defesa até proteção de infraestrutura civil e apoio a emergências. Cada aplicação aproveita a capacidade única dos aerostatos para permanecer em posição durante períodos estendidos.",
+    "ctaText": "Consultar aplicação",
+    "intro": "Nossas plataformas aerostáticas são implantadas em cenários operacionais diversos, proporcionando cobertura contínua sem os custos operacionais de aeronaves tripuladas nem as limitações de autonomia de UAV convencionais.",
+    "items": {
+      "defense": {
+        "title": "Defesa e ISR",
+        "description": "Vigilância de zonas de operações, apoio tático em tempo real, reconhecimento de áreas negadas e avaliação de danos."
+      },
+      "borders": {
+        "title": "Controle de Fronteiras",
+        "description": "Detecção automática de cruzamentos irregulares, monitoramento de tráfico ilícito e coordenação com patrulhas terrestres."
+      },
+      "infrastructure": {
+        "title": "Infraestrutura Crítica",
+        "description": "Proteção perimetral de portos, aeroportos, usinas elétricas, minas e oleodutos com alertas automáticos."
+      },
+      "safecity": {
+        "title": "Safe City",
+        "description": "Vigilância urbana, monitoramento de eventos em massa, rastreamento de veículos e coordenação de resposta rápida."
+      },
+      "rescue": {
+        "title": "Resgate e Emergências",
+        "description": "Busca e resgate em áreas extensas, avaliação de desastres e apoio a combate de incêndios florestais."
+      },
+      "ports": {
+        "title": "Portos e Marítimo",
+        "description": "Vigilância portuária, detecção de aproximações não autorizadas e monitoramento de tráfico marítimo."
+      }
+    },
+    "howWeWork": {
+      "title": "Como Trabalhamos",
+      "step1": {
+        "title": "Avaliação de Requisitos",
+        "description": "Reunião com stakeholders para entender objetivos e métricas de sucesso"
+      },
+      "step2": {
+        "title": "Desenho de Solução",
+        "description": "Seleção de plataforma, sensores e integração com sistemas existentes"
+      },
+      "step3": {
+        "title": "Demonstração Operacional",
+        "description": "Demo em condições reais para avaliar capacidades e desempenho do sistema"
+      },
+      "step4": {
+        "title": "Implementação",
+        "description": "Instalação, integração e treinamento de operadores"
+      },
+      "step5": {
+        "title": "Suporte Contínuo",
+        "description": "Manutenção, atualizações e otimização contínua"
+      }
+    },
+    "cta": {
+      "title": "Tem um caso de uso específico?",
+      "description": "Nossa equipe técnica pode avaliar suas necessidades e propor a configuração ótima para sua aplicação.",
+      "ctaText": "Consultar aplicação"
+    },
+    "videos": {
+      "title": "Sistema em Ação",
+      "subtitle": "Observe nosso sistema aerostático em operação real",
+      "product": {
+        "title": "Sistema Aerostático",
+        "description": "Plataforma de vigilância em implantação operacional"
+      },
+      "camera": {
+        "title": "Capacidade de Zoom",
+        "description": "Detecção e rastreamento de alvos a longa distância"
+      }
+    }
+  },
+  "company": {
+    "title": "Sobre AeroFactor",
+    "subtitle": "Tecnologia aérea a serviço da segurança e vigilância inteligente",
+    "description": "Empresa chilena especializada em soluções de vigilância aérea persistente com cobertura 24/7 e alcance de 360°.",
+    "ctaText": "Entre em Contato",
+    "intro1": "AeroFactor é uma empresa chilena especializada no desenvolvimento e implementação de soluções de vigilância aérea persistente, baseadas em sistemas de aerostatos e sensores avançados. Nossa tecnologia permite uma observação contínua 24/7, com cobertura de 360°, destinada a fortalecer a segurança territorial, a proteção de infraestrutura crítica e o apoio tático a operações civis e governamentais.",
+    "intro2": "Com uma equipe multidisciplinar de engenheiros, técnicos e analistas, trabalhamos sob os mais altos padrões de qualidade e confidencialidade, assegurando que cada solução se adapte às condições operativas e estratégicas de nossos clientes.",
+    "mission": {
+      "title": "Missão",
+      "description": "Prover soluções aéreas avançadas que fortaleçam a segurança territorial e operativa mediante o uso de tecnologia confiável, autônoma e persistente, projetada para responder aos desafios atuais de vigilância e controle."
+    },
+    "vision": {
+      "title": "Visão",
+      "description": "Ser a referência latino-americana em tecnologia de vigilância aérea inteligente, destacando-se pela inovação, confiabilidade e integração efetiva com organismos de segurança e empresas estratégicas."
+    },
+    "values": {
+      "title": "Valores Corporativos",
+      "innovation": {
+        "title": "Inovação",
+        "description": "Buscamos permanentemente novas formas de otimizar a vigilância aérea."
+      },
+      "trust": {
+        "title": "Confiança",
+        "description": "Cada operação é executada com precisão, transparência e responsabilidade."
+      },
+      "commitment": {
+        "title": "Compromisso",
+        "description": "Acompanhamos nossos clientes durante todo o ciclo operativo."
+      },
+      "efficiency": {
+        "title": "Eficiência",
+        "description": "Projetamos soluções que equilibram custo, desempenho e autonomia."
+      },
+      "security": {
+        "title": "Segurança",
+        "description": "Protegemos informação, infraestrutura e ambientes críticos."
+      }
+    },
+    "team": {
+      "title": "Equipe e Capacidades",
+      "description1": "Nossa equipe é composta por profissionais com experiência em aeronáutica, eletrônica, telecomunicações e defesa, capazes de integrar sensores ópticos, infravermelhos e de radar em ambientes de alta exigência.",
+      "description2": "Além disso, colaboramos com especialistas em análise de dados, inteligência artificial e manutenção logística, garantindo operações contínuas e sustentáveis."
+    },
+    "cta": {
+      "title": "Quer saber mais sobre AeroFactor?",
+      "description": "Entre em contato através do formulário ou escreva para info@aerofactorlatam.com para agendar uma apresentação.",
+      "ctaText": "Entre em Contato"
+    }
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Nossa empresa"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar sobre suas necessidades de vigilância aérea",
+    "description": "Nossa equipe técnica responderá em menos de 24 horas.",
+    "ctaText": "Ver formulário",
+    "formTitle": "Solicite Informação",
+    "formSubtitle": "Preencha o formulário e um especialista entrará em contato para avaliar suas necessidades",
+    "directContact": {
+      "title": "Contato Direto",
+      "email": "Email",
+      "phone": "Telefone",
+      "schedule": "Horário",
+      "scheduleValue": "Seg - Sex: 9:00 - 18:00 hrs (Horário do Chile GMT-3)"
+    },
+    "benefits": {
+      "title": "O Que Você Obterá?",
+      "response": "Resposta em <strong>menos de 24h</strong>",
+      "evaluation": "Avaliação técnica <strong>sem custo</strong>",
+      "proposal": "Proposta <strong>personalizada</strong>"
+    },
+    "confidentiality": "<strong>100% confidencial.</strong> Dispomos de acordos de não divulgação (NDA).",
+    "form": {
+      "name": "Nome completo",
+      "email": "Email",
+      "phone": "Telefone",
+      "organization": "Organização",
+      "message": "Mensagem",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso. Entraremos em contato em breve.",
+      "error": "Erro ao enviar a mensagem. Por favor, tente novamente.",
+      "successTitle": "Mensagem Enviada!",
+      "successMessage": "Obrigado por entrar em contato. Recebemos sua mensagem e responderemos em menos de 24 horas.",
+      "nextSteps": "O que vem a seguir?",
+      "step1": "Revisaremos sua consulta detalhadamente",
+      "step2": "Um especialista entrará em contato em breve",
+      "step3": "Você receberá uma proposta personalizada",
+      "sendAnother": "Enviar outra mensagem",
+      "backHome": "Voltar ao início"
+    }
+  },
+  "footer": {
+    "tagline": "Vigilância aérea persistente para um mundo mais seguro",
+    "products": "Produtos",
+    "allProducts": "Ver todos os produtos",
+    "services": "Serviços",
+    "systemIntegration": "Integração de Sistemas",
+    "supportMaintenance": "Suporte e Manutenção",
+    "training": "Treinamento",
+    "contact": "Contato",
+    "email": "info@aerofactorlatam.com",
+    "phone": "+56 X XXXX XXXX",
+    "address": "Santiago, Chile",
+    "rights": "Todos os direitos reservados."
+  },
+  "meta": {
+    "home": {
+      "title": "AEROFACTOR | Vigilância Aérea com Aerostatos no Chile",
+      "description": "Soluções avançadas de vigilância aérea persistente com aerostatos, sensores multi-espectro e inteligência artificial para segurança territorial, fronteiras e infraestrutura crítica."
+    }
+  },
+  "imageAlts": {
+    "contactSystem": "Sistema aerostático AEROFACTOR em operação",
+    "heroAerostat": "Balão aerostático de vigilância AEROFACTOR",
+    "companyOffice": "Escritório da AEROFACTOR",
+    "productsSystem": "Sistema aerostático de vigilância AEROFACTOR em operação sobre território chileno",
+    "applicationsSystem": "Aplicações do sistema aerostático AEROFACTOR: vigilância de infraestrutura crítica e defesa",
+    "companyDeployment": "Sistema aerostático AEROFACTOR implantado com estação terrestre de controle"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: Novembro 2025",
+    "company": {
+      "title": "Informações da Empresa",
+      "businessName": "Razão Social",
+      "activity": "Atividade",
+      "address": "Endereço",
+      "rut": "RUT"
+    },
+    "intro": {
+      "title": "Introdução",
+      "description": "Na AEROFACTOR valorizamos e respeitamos sua privacidade. Esta política explica como coletamos, usamos e protegemos as informações pessoais que você nos fornece através do nosso site e serviços."
+    },
+    "dataCollection": {
+      "title": "Informações que Coletamos",
+      "description": "Coletamos as seguintes informações que você nos fornece voluntariamente:",
+      "items": {
+        "name": "Nome e sobrenome",
+        "email": "Endereço de e-mail",
+        "phone": "Número de telefone",
+        "company": "Organização ou empresa",
+        "message": "Mensagens e consultas que você nos envia"
+      }
+    },
+    "dataUse": {
+      "title": "Uso das Informações",
+      "description": "Utilizamos suas informações pessoais para:",
+      "items": {
+        "respond": "Responder às suas consultas e solicitações",
+        "provide": "Fornecer informações sobre nossos produtos e serviços",
+        "improve": "Melhorar nossos serviços e experiência do usuário",
+        "communicate": "Comunicar-nos com você sobre atualizações relevantes"
+      }
+    },
+    "dataSecurity": {
+      "title": "Segurança dos Dados",
+      "description": "Implementamos medidas de segurança técnicas e organizacionais apropriadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Todos os dados são armazenados de forma segura e apenas pessoal autorizado tem acesso a eles."
+    },
+    "dataSharing": {
+      "title": "Compartilhamento de Informações",
+      "description": "Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto quando necessário para fornecer nossos serviços ou quando exigido por lei. Podemos compartilhar informações com provedores de serviços que nos ajudam a operar nosso negócio, sempre sob estritos acordos de confidencialidade."
+    },
+    "rights": {
+      "title": "Seus Direitos",
+      "description": "Você tem o direito de:",
+      "items": {
+        "access": "Acessar as informações pessoais que temos sobre você",
+        "correct": "Solicitar a correção de informações inexatas",
+        "delete": "Solicitar a exclusão de suas informações pessoais",
+        "object": "Objetar ao processamento de suas informações"
+      }
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Se você tiver dúvidas sobre esta política de privacidade ou desejar exercer seus direitos, pode nos contatar em:"
+    }
+  },
+  "terms": {
+    "title": "Termos e Condições",
+    "lastUpdated": "Última atualização: Novembro 2025",
+    "company": {
+      "title": "Informações da Empresa",
+      "businessName": "Razão Social",
+      "activity": "Atividade",
+      "address": "Endereço",
+      "rut": "RUT"
+    },
+    "acceptance": {
+      "title": "Aceitação dos Termos",
+      "description": "Ao acessar e usar este site, você concorda em estar vinculado a estes termos e condições de uso. Se você não concordar com qualquer parte destes termos, não deve usar nosso site."
+    },
+    "services": {
+      "title": "Descrição dos Serviços",
+      "description": "A AEROFACTOR fornece soluções de vigilância aérea persistente, incluindo:",
+      "items": {
+        "tactical": "Sistemas aerostáticos táticos, regionais e estratégicos",
+        "regional": "Soluções de vigilância para defesa, fronteiras e infraestrutura crítica",
+        "strategic": "Plataformas equipadas com sensores avançados e inteligência artificial",
+        "integration": "Integração de sistemas de vigilância",
+        "support": "Suporte técnico e manutenção",
+        "training": "Treinamento especializado para operadores"
+      }
+    },
+    "useConditions": {
+      "title": "Condições de Uso",
+      "description": "Ao usar nosso site, você concorda em:",
+      "items": {
+        "lawful": "Usar o site apenas para fins legítimos e legais",
+        "accurate": "Fornecer informações precisas e atualizadas",
+        "noHarm": "Não realizar ações que possam danificar ou interromper o funcionamento do site",
+        "respect": "Respeitar os direitos de propriedade intelectual"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Propriedade Intelectual",
+      "description": "Todo o conteúdo deste site, incluindo textos, gráficos, logotipos, imagens, vídeos e software, é propriedade da RPASYSTEMGLOBAL SPA ou de seus licenciadores e está protegido pelas leis de propriedade intelectual do Chile e tratados internacionais. A reprodução, distribuição ou uso comercial sem autorização expressa não é permitida."
+    },
+    "liability": {
+      "title": "Limitação de Responsabilidade",
+      "description": "A AEROFACTOR se esforça para manter as informações do site precisas e atualizadas, mas não garante a exatidão, integridade ou atualidade das informações. Não seremos responsáveis por danos diretos, indiretos, incidentais ou consequentes resultantes do uso ou da impossibilidade de usar nosso site."
+    },
+    "modifications": {
+      "title": "Modificações",
+      "description": "Reservamo-nos o direito de modificar estes termos e condições a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no site. É sua responsabilidade revisar periodicamente estes termos."
+    },
+    "jurisdiction": {
+      "title": "Jurisdição e Lei Aplicável",
+      "description": "Estes termos e condições são regidos pelas leis da República do Chile. Qualquer disputa relacionada a estes termos estará sujeita à jurisdição exclusiva dos tribunais chilenos."
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Para perguntas sobre estes termos e condições, você pode nos contatar em:"
+    }
+  }
+}
