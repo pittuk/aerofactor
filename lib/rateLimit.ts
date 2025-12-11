@@ -49,10 +49,10 @@ export function getRateLimitInfo(identifier: string): {
 if (typeof setInterval !== 'undefined') {
   setInterval(() => {
     const now = Date.now();
-    for (const [key, value] of rateLimitMap.entries()) {
+    rateLimitMap.forEach((value, key) => {
       if (now > value.resetTime) {
         rateLimitMap.delete(key);
       }
-    }
+    });
   }, 60000); // Cada minuto
 }
