@@ -109,10 +109,11 @@ export default function AplicacionesPage() {
                   ref={video1Ref}
                   controls
                   className="absolute inset-0 w-full h-full object-cover"
-                  preload="metadata"
+                  preload="none"
+                  poster="/images/Videos/1-poster.jpg"
                 >
                   <source src="/images/Videos/1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
+                  Tu navegador no soporta la reproducción de video.
                 </video>
               </div>
               <div className="bg-white rounded-2xl p-6 mt-4 shadow-lg w-full lg:w-[710px]">
@@ -132,10 +133,11 @@ export default function AplicacionesPage() {
                   ref={video2Ref}
                   controls
                   className="absolute inset-0 w-full h-full object-cover"
-                  preload="metadata"
+                  preload="none"
+                  poster="/images/Videos/2-poster.jpg"
                 >
                   <source src="/images/Videos/2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
+                  Tu navegador no soporta la reproducción de video.
                 </video>
               </div>
               <div className="bg-white rounded-2xl p-6 mt-4 shadow-lg w-full lg:w-[710px]">

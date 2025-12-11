@@ -6,6 +6,7 @@ import Footer from '@/components/ui/Footer';
 import PageTransition from '@/components/PageTransition';
 import SchemaOrg from '@/components/SchemaOrg';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import LangUpdater from '@/components/LangUpdater';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -57,9 +58,14 @@ export default function RootLayout({
       <head>
         <SchemaOrg />
         <GoogleAnalytics />
+        {/* Meta tags para idiomas alternativos */}
+        <meta property="og:locale" content="es_CL" />
+        <meta property="og:locale:alternate" content="en_US" />
+        <meta property="og:locale:alternate" content="pt_BR" />
       </head>
       <body className={`${inter.className} antialiased`}>
         <LanguageProvider>
+          <LangUpdater />
           <Navbar />
           <PageTransition>
             <main id="main-content" role="main" className="min-h-screen">
