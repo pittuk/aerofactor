@@ -1,29 +1,97 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { checkRateLimit } from '@/lib/rateLimit';
+
+// Función de sanitización HTML para prevenir XSS
+function escapeHtml(text: string): string {
+  const map: Record<string, string> = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, (m) => map[m]);
+}
+
+// Función para sanitizar y validar inputs
+function sanitizeInput(input: string, maxLength: number): string {
+  return input.trim().slice(0, maxLength);
+}
+
+// Validación de email mejorada
+function isValidEmail(email: string): boolean {
+  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  return emailRegex.test(email) && email.length <= 254;
+}
+
+// Validación de teléfono
+function isValidPhone(phone: string): boolean {
+  const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/;
+  return !phone || phoneRegex.test(phone);
+}
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting por IP
+    const ip = request.ip ?? request.headers.get('x-forwarded-for') ?? 'unknown';
+
+    if (!checkRateLimit(ip, 3, 600000)) { // 3 requests por 10 minutos
+      return NextResponse.json(
+        {
+          error: 'Demasiadas solicitudes. Por favor intente nuevamente en 10 minutos.',
+        },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
-    const { name, email, company, phone, message, honey } = body;
+    let { name, email, company, phone, message, honey } = body;
 
     // Honeypot check
     if (honey) {
       return NextResponse.json({ error: 'Invalid submission' }, { status: 400 });
     }
 
-    // Validation
-    if (!name || !email || !company || !message) {
+    // Sanitizar inputs
+    name = sanitizeInput(name, 100);
+    email = sanitizeInput(email, 254);
+    company = sanitizeInput(company, 200);
+    phone = phone ? sanitizeInput(phone, 20) : '';
+    message = sanitizeInput(message, 2000);
+
+    // Validaciones
+    if (!name || name.length < 2) {
       return NextResponse.json(
-        { error: 'Por favor complete todos los campos requeridos' },
+        { error: 'El nombre debe tener al menos 2 caracteres' },
         { status: 400 }
       );
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!email || !isValidEmail(email)) {
       return NextResponse.json(
         { error: 'Por favor ingrese un correo electrónico válido' },
+        { status: 400 }
+      );
+    }
+
+    if (!company || company.length < 2) {
+      return NextResponse.json(
+        { error: 'El nombre de la organización debe tener al menos 2 caracteres' },
+        { status: 400 }
+      );
+    }
+
+    if (!message || message.length < 10) {
+      return NextResponse.json(
+        { error: 'El mensaje debe tener al menos 10 caracteres' },
+        { status: 400 }
+      );
+    }
+
+    if (phone && !isValidPhone(phone)) {
+      return NextResponse.json(
+        { error: 'Por favor ingrese un número de teléfono válido' },
         { status: 400 }
       );
     }
@@ -41,12 +109,12 @@ export async function POST(request: NextRequest) {
 
     const phoneText = phone || 'No proporcionado';
 
-    // Prepare email content
+    // Prepare email content con sanitización
     const mailOptions = {
       from: process.env.CONTACT_FROM || 'noreply@aerofactorlatam.com',
       to: process.env.CONTACT_TO || 'info@aerofactorlatam.com',
       replyTo: email,
-      subject: `Consulta desde Web - ${company}`,
+      subject: `Consulta desde Web - ${escapeHtml(company)}`,
       text: `Nueva consulta desde el sitio web AEROFACTOR
 
 Nombre: ${name}
@@ -79,23 +147,23 @@ ${message}
     <div class="content">
       <div class="field">
         <div class="label">Nombre:</div>
-        <div class="value">${name}</div>
+        <div class="value">${escapeHtml(name)}</div>
       </div>
       <div class="field">
         <div class="label">Email:</div>
-        <div class="value"><a href="mailto:${email}">${email}</a></div>
+        <div class="value"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></div>
       </div>
       <div class="field">
         <div class="label">Organización:</div>
-        <div class="value">${company}</div>
+        <div class="value">${escapeHtml(company)}</div>
       </div>
       <div class="field">
         <div class="label">Teléfono:</div>
-        <div class="value">${phoneText}</div>
+        <div class="value">${escapeHtml(phoneText)}</div>
       </div>
       <div class="message">
         <div class="label">Mensaje:</div>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
       </div>
     </div>
   </div>
@@ -111,7 +179,12 @@ ${message}
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error sending email:', error);
+    // Log seguro sin exponer detalles sensibles
+    console.error('Error sending contact form email:', {
+      timestamp: new Date().toISOString(),
+      errorMessage: error instanceof Error ? error.message : 'Unknown error',
+    });
+
     return NextResponse.json(
       { error: 'Error al enviar el mensaje. Por favor intente nuevamente.' },
       { status: 500 }

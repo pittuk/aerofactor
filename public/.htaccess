@@ -1,0 +1,53 @@
+# HEADERS DE SEGURIDAD PARA AEROFACTOR
+# Este archivo debe copiarse al directorio raíz del servidor web
+
+<IfModule mod_headers.c>
+    # HSTS - Forzar HTTPS por 2 años
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+    # Prevenir clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Prevenir MIME-sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # XSS Protection (legacy, pero aún útil)
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions Policy (deshabilitar features no usadas)
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+    # Content Security Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://ipapi.co; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+
+    # Remover header X-Powered-By
+    Header always unset X-Powered-By
+
+    # DNS Prefetch Control
+    Header always set X-DNS-Prefetch-Control "on"
+</IfModule>
+
+# Protección adicional
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Forzar HTTPS (descomentar en producción)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Bloquear acceso a archivos sensibles
+    RewriteRule ^\.env - [F,L]
+    RewriteRule ^\.git - [F,L]
+</IfModule>
+
+# Prevenir directory listing
+Options -Indexes
+
+# Protección de archivos sensibles
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

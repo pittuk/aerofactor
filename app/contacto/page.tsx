@@ -3,23 +3,12 @@
 import Hero from '@/components/ui/Hero';
 import ContactForm from '@/components/ui/ContactForm';
 import { useLanguage } from '@/contexts/LanguageContext';
-import Head from 'next/head';
 
 export default function ContactoPage() {
   const { t, locale } = useLanguage();
 
   return (
     <>
-      <Head>
-        <title>Contacto | Solicitar Demostración AEROFACTOR</title>
-        <meta name="description" content="Contacte con AEROFACTOR para una demostración personalizada de nuestros sistemas aerostáticos. Email: info@aerofactorlatam.com. Respuesta en 24 horas." />
-        <meta name="keywords" content="contacto AEROFACTOR, demostración aerostatos, cotización vigilancia aérea, solicitar información ISR" />
-        <meta property="og:title" content="Contacto | Solicitar Demostración AEROFACTOR" />
-        <meta property="og:description" content="Contáctenos para una demostración personalizada. Respuesta en 24 horas." />
-        <meta property="og:url" content="https://aerofactor.cl/contacto" />
-        <meta property="og:image" content="https://aerofactor.cl/og/contacto.jpg" />
-        <link rel="canonical" href="https://aerofactor.cl/contacto" />
-      </Head>
       <Hero
         title={t.contact.title}
         subtitle={t.contact.subtitle}
@@ -85,19 +74,43 @@ export default function ContactoPage() {
                     <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-neutral-700" dangerouslySetInnerHTML={{ __html: t.contact.benefits.response }} />
+                    <span className="text-neutral-700">
+                      {locale === 'es' ? (
+                        <>Respuesta en <strong>menos de 24h</strong></>
+                      ) : locale === 'en' ? (
+                        <>Response in <strong>less than 24h</strong></>
+                      ) : (
+                        <>Resposta em <strong>menos de 24h</strong></>
+                      )}
+                    </span>
                   </li>
                   <li className="flex items-start text-sm">
                     <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-neutral-700" dangerouslySetInnerHTML={{ __html: t.contact.benefits.evaluation }} />
+                    <span className="text-neutral-700">
+                      {locale === 'es' ? (
+                        <>Evaluación técnica <strong>sin costo</strong></>
+                      ) : locale === 'en' ? (
+                        <>Technical evaluation at <strong>no cost</strong></>
+                      ) : (
+                        <>Avaliação técnica <strong>sem custo</strong></>
+                      )}
+                    </span>
                   </li>
                   <li className="flex items-start text-sm">
                     <svg className="w-5 h-5 text-accent-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-neutral-700" dangerouslySetInnerHTML={{ __html: t.contact.benefits.proposal }} />
+                    <span className="text-neutral-700">
+                      {locale === 'es' ? (
+                        <>Propuesta <strong>personalizada</strong></>
+                      ) : locale === 'en' ? (
+                        <><strong>Customized</strong> proposal</>
+                      ) : (
+                        <>Proposta <strong>personalizada</strong></>
+                      )}
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -108,7 +121,15 @@ export default function ContactoPage() {
                   <svg className="w-5 h-5 text-primary-600 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                   </svg>
-                  <p className="text-xs text-neutral-600" dangerouslySetInnerHTML={{ __html: t.contact.confidentiality }} />
+                  <p className="text-xs text-neutral-600">
+                    {locale === 'es' ? (
+                      <><strong>100% confidencial.</strong> Disponemos de acuerdos de no divulgación (NDA).</>
+                    ) : locale === 'en' ? (
+                      <><strong>100% confidential.</strong> We have non-disclosure agreements (NDA) available.</>
+                    ) : (
+                      <><strong>100% confidencial.</strong> Temos acordos de não divulgação (NDA) disponíveis.</>
+                    )}
+                  </p>
                 </div>
               </div>
             </div>

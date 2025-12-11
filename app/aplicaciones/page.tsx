@@ -5,7 +5,6 @@ import Hero from '@/components/ui/Hero';
 import AppGrid from '@/components/ui/AppGrid';
 import CTAWide from '@/components/ui/CTAWide';
 import { useLanguage } from '@/contexts/LanguageContext';
-import Head from 'next/head';
 
 export default function AplicacionesPage() {
   const { t, locale } = useLanguage();
@@ -69,17 +68,6 @@ export default function AplicacionesPage() {
 
   return (
     <>
-      <Head>
-        <title>Aplicaciones de Vigilancia Aerostática | Defensa, Fronteras, Infraestructura | AEROFACTOR</title>
-        <meta name="description" content="Soluciones de vigilancia aérea persistente para defensa e ISR, control de fronteras, protección de infraestructura crítica, Safe City, puertos marítimos y rescate de emergencias." />
-        <meta name="keywords" content="vigilancia defensa, control fronteras, infraestructura crítica, safe city, vigilancia portuaria, rescate emergencias, ISR" />
-        <meta property="og:title" content="Aplicaciones de Vigilancia Aerostática | AEROFACTOR" />
-        <meta property="og:description" content="Soluciones integrales de vigilancia aérea persistente para múltiples sectores" />
-        <meta property="og:url" content="https://aerofactor.cl/aplicaciones" />
-        <meta property="og:image" content="https://aerofactor.cl/og/aplicaciones.jpg" />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://aerofactor.cl/aplicaciones" />
-      </Head>
       <Hero
         title={t.applications.title}
         subtitle={t.applications.subtitle}

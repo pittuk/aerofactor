@@ -3,23 +3,12 @@
 import Hero from '@/components/ui/Hero';
 import CTAWide from '@/components/ui/CTAWide';
 import { useLanguage } from '@/contexts/LanguageContext';
-import Head from 'next/head';
 
 export default function EmpresaPage() {
   const { t, locale } = useLanguage();
 
   return (
     <>
-      <Head>
-        <title>Sobre AEROFACTOR | Empresa de Vigilancia Aérea en Chile y Latinoamérica</title>
-        <meta name="description" content="RPASYSTEMGLOBAL SPA (RUT: 76.981.226-1). Empresa líder en soluciones de vigilancia aérea persistente con aerostatos en Chile y Latinoamérica. Innovación, confianza y compromiso." />
-        <meta name="keywords" content="AEROFACTOR empresa, RPASYSTEMGLOBAL, vigilancia aérea Chile, empresa defensa Chile, aerostatos Latinoamérica" />
-        <meta property="og:title" content="Sobre AEROFACTOR | Empresa de Vigilancia Aérea" />
-        <meta property="og:description" content="Líderes en soluciones de vigilancia aérea persistente en Chile y Latinoamérica" />
-        <meta property="og:url" content="https://aerofactor.cl/empresa" />
-        <meta property="og:image" content="https://aerofactor.cl/og/empresa.jpg" />
-        <link rel="canonical" href="https://aerofactor.cl/empresa" />
-      </Head>
       <Hero
         title={t.company.title}
         subtitle={t.company.subtitle}

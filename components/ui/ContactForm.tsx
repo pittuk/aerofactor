@@ -37,7 +37,7 @@ export default function ContactForm() {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/contact-handler.php', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
